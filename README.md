@@ -1,6 +1,6 @@
 ## Projeto 01 - Avaliação Riso de Credito
 
-### Criterio utilizado para constução do projeto: Cross Industry Standard Process for Data Mining (CRISP-DM)
+#### Criterio utilizado para constução do projeto: Cross Industry Standard Process for Data Mining (CRISP-DM)
 
 ### CRISP-DM é a abreviação de Cross Industry Standard Process for Data Mining, que pode ser traduzido como Processo Padrão Inter-Indústrias para Mineração de Dados. Desempenha um papel crucial no cenário empresarial moderno, permitindo que as organizações tomem decisões embasadas e obtenham insights valiosos. Nesse contexto, a metodologia CRISP-DM tem se destacado como uma estrutura robusta para abordar projetos de ciência de dados.
 
