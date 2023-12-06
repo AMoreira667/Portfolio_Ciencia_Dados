@@ -43,7 +43,7 @@
 #### Dicionário de Dados
 
 <div align="center">
-<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/8e15b81e-b73e-47d6-a17c-9b399cec528b.png" width="700px" />
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/8956123a-e78e-480d-997c-f68641383472.png" width="700px" />
 </div>
 
 #### Análise Exploratória
