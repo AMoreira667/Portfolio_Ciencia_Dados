@@ -19,6 +19,6 @@
 #### 6 - Implantação (Deployment) A fase final da metodologia CRISP-DM é a implantação do modelo em um ambiente de produção. Integramos o modelo aos sistemas existentes, monitoramos seu desempenho contínuo e garantimos a adoção pela equipe de negócios.
 
 <div align="center">
-<img src="![CRISP-DM](https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/e2cd3dbc-6a95-47d5-87df-130bd0b409d8).png" width="700px" />
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/e2cd3dbc-6a95-47d5-87df-130bd0b409d8.png" width="700px" />
 </div>
 
