@@ -46,7 +46,7 @@
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/b5f92e35-6fff-4c41-8eeb-5eeaa4de2467.png" width="700px" />
 </div>
 
-#### Análise Exploratória
+#### Análise Exploratória de Dados (RStudio) 
 
 #### A análise exploratória de dados (AED) é o uso de ferramentas para examinar determinado conjunto de dados antes mesmo da aplicação de qualquer técnica estatística para tirar conclusões sobre eles. É uma maneira de obter um entendimento prévio sobre os dados disponíveis para um estudo e das variáveis que eles envolvem.
 #### Depois que os dados são coletados e armazenados em um banco de dados, a análise descritiva é o primeiro passo dentro do AED. Nessa etapa, os pesquisadores se familiarizam e organizam esses dados de forma sintetizada para saber que tipo de informações podem ser tiradas deles.
@@ -57,5 +57,18 @@
 #### Fazer algumas suposições preliminares sobre as tendências que esses dados demonstram, como normalidade e linearidade.
 #### Esse é o processo que acontece nos bastidores de um sistema voltado para Business Intelligence (BI), que é a análise de dados críticos para ajudar os gestores de uma empresa a tomarem as melhores decisões. 
 
+#### Análise Exploratória de Dados (RStudio) - Pacotes e Biblioteca
+
+#### Mapear diretorio onde esta salva a base de dados
+
+#### *setwd("D:/DOCUMENTOS DIVERSOS/09 - PORTIFÓLIO CIÊNCIA DADOS/PROJETO_01_AVALIAÇÃO_RISCO_EMPRESTIMO"") # Ou Ctrl + Shift + H
+# Pacotes necessarios
+install.packages("readxl") # Para leitura de dados Excel
+install.packages("Information") # Para calculo IV
+install.packages("car“) # Para analise de regressao e diagnostico de modelos 
+install.packages("cutpoint") # Para calculo ponto de corte
+install.packages("ROCR") # Para calculo KS e AUC
+install.packages("ggplot2") # Para criacao de tabelas e graficos
+install.packages("dplyr") # Pra manipulacao e transformacao dados
 
 
