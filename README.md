@@ -1,6 +1,6 @@
 ## Projeto 01 - Avaliação Riso de Credito
 
-#### Uma instituição financeira acompanha periodicamente o indicador de inadimplência dos produtos financeiros e tem verificado o aumento expressivo desta taxa para o produto empréstimo, no último ano. Por mais que não pagamento gere um valor de “empréstimo” que possa gerar receita futura (devido a taxa de juros) para a instituição, parte do dinheiro pode não ser recuperada. Portanto, traçar estratégias de relacionamento, crédito e cobrança são necessários para controlar a taxa de inadimplência. Assim, a área de Empréstimos, solicitou a construção de um modelo preditivo para o produto com o objetivo de identificar o perfil dos clientes PF inadimplentes. Como a quantidade de clientes é grande e o custo de comunicação é limitado, o modelo auxiliará a instituição financeira a trabalhar de forma otimizada com seus clientes.
+#### Uma instituição financeira acompanha periodicamente o indicador de inadimplência dos produtos financeiros e tem verificado o aumento expressivo desta taxa para o produto empréstimo, no último ano. Por mais que não pagamento gere um valor de “empréstimo” que possa gerar receita futura (devido a taxa de juros) para a instituição, parte do dinheiro pode não ser recuperada. Portanto, traçar estratégias de relacionamento, crédito e cobrança são necessários para controlar a taxa de inadimplência. Assim, a área de Empréstimos, solicitou a construção de um modelo preditivo para o produto com o objetivo de identificar o perfil dos clientes PF inadimplentes. Como a quantidade de clientes é grande e o custo de comunicação é limitado, o modelo auxiliará a instituição financeira a trabalhar de forma otimizada com seus clientes.
 
 #### Criterio utilizado para constução do projeto: Cross Industry Standard Process for Data Mining (CRISP-DM)
 
@@ -61,9 +61,10 @@
 
 #### Mapear diretorio onde esta salva a base de dados
 
-#### *setwd("D:/DOCUMENTOS DIVERSOS/09 - PORTIFÓLIO CIÊNCIA DADOS/PROJETO_01_AVALIAÇÃO_RISCO_EMPRESTIMO"") # Ou Ctrl + Shift + H
-# Pacotes necessarios
-install.packages("readxl") # Para leitura de dados Excel
+#### setwd("D:/DOCUMENTOS DIVERSOS/09 - PORTIFÓLIO CIÊNCIA DADOS/PROJETO_01_AVALIAÇÃO_RISCO_EMPRESTIMO"") # Ou Ctrl + Shift + H
+
+#### Pacotes necessarios
+#### install.packages("readxl") *** Para leitura de dados Excel
 install.packages("Information") # Para calculo IV
 install.packages("car“) # Para analise de regressao e diagnostico de modelos 
 install.packages("cutpoint") # Para calculo ponto de corte
