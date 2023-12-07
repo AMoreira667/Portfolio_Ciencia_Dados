@@ -61,7 +61,7 @@
 
 #### Mapear diretorio onde esta salva a base de dados
 
-#### setwd("D:/DOCUMENTOS DIVERSOS/09 - PORTIFÓLIO CIÊNCIA DADOS/PROJETO_01_AVALIAÇÃO_RISCO_EMPRESTIMO"") # Ou Ctrl + Shift + H
+#### setwd("inserir directorio do arquivo"") #### Ou Ctrl + Shift + H
 
 #### Pacotes necessarios
 #### install.packages("readxl") *** Para leitura de dados Excel
