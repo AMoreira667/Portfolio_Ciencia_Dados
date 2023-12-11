@@ -80,8 +80,7 @@ install.packages("ROCR")              # Para calculo KS e AUC
 install.packages("dplyr")             # Para manipulacao e transformacao dados
 install.packages("psych")             # Para analise psicometrica e estatisitca
 install.packages("rpart")             # Para decision tree
-install.packages("rpart.plot")        # Para visualização descision tree
-install.packages("C50")               # Decision Tree Algoritmo C5.0
+install.packages("C50")               # Decision tree algoritmo C5.0
 install.packages("gmodels")           # Matriz de contigencia
 installed.packages()                  # Para verificar bibliotecas instaladas
 ````
@@ -95,7 +94,6 @@ library(cutpointr)
 library(ROCR)
 library(dplyr)
 library(psych)
-library(rpart)
 library(rpart.plot)
 library(C50)
 library(gmodels)
