@@ -129,3 +129,8 @@ tail(emprestimo, 15) # Calda contento as 15 ultimas linhas do dataframe
 ````
 summary(emprestimo[,-1]) # Medidas resumo (media, mediana, minimo, maximo e quartis)
 ````
+
+<div align="center">
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/e3645e0e-edf2-42fe-82c5-75a93bbdcd3e.png" width="700px" />
+</div>
+
