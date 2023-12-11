@@ -115,5 +115,7 @@ emprestimo <- read_excel("Regressao logistica.xlsx", sheet = "Emprestimo - Dados
 #### Cabecalho
 ````
 head(emprestimo, 15) # Cabecalho contento as 15 primeiras linhas do dataframe
-tail(emprestimo, 15) # Calda contento as 15 ultimas linhas do dataframe
 ````
+<div align="center">
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/823031af-c0f6-4464-a681-3fcc89a72307.png" width="700px" />
+</div>
