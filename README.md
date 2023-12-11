@@ -119,3 +119,10 @@ head(emprestimo, 15) # Cabecalho contento as 15 primeiras linhas do dataframe
 <div align="center">
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/823031af-c0f6-4464-a681-3fcc89a72307.png" width="700px" />
 </div>
+
+````
+tail(emprestimo, 15) # Calda contento as 15 ultimas linhas do dataframe
+````
+<div align="center">
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/d42a2af9-f020-4871-b9a0-2b0c3832ca37.png" width="700px" />
+</div>
