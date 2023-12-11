@@ -57,6 +57,10 @@
 #### Fazer algumas suposições preliminares sobre as tendências que esses dados demonstram, como normalidade e linearidade.
 #### Esse é o processo que acontece nos bastidores de um sistema voltado para Business Intelligence (BI), que é a análise de dados críticos para ajudar os gestores de uma empresa a tomarem as melhores decisões. 
 
+<div align="center">
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/03489886-6784-4813-b73d-1422257f51b8.png" width="700px" />
+</div>
+
 #### Análise Exploratória de Dados (RStudio) - Pacotes e Biblioteca
 
 #### Mapear diretorio onde esta salvo a base de dados
