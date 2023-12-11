@@ -48,7 +48,7 @@
 
 #### Análise Exploratória de Dados (RStudio) 
 
-#### A análise exploratória de dados (AED) é o uso de ferramentas para examinar determinado conjunto de dados antes mesmo da aplicação de qualquer técnica estatística para tirar conclusões sobre eles. É uma maneira de obter um entendimento prévio sobre os dados disponíveis para um estudo e das variáveis que eles envolvem.
+#### A análise exploratória de dados (AED) é o uso de ferramentas para examinar determinado conjunto de dados antes mesmo da aplicação de qualquer técnica estatística para tirar conclusões sobre eles. É uma maneira de obter um entendimento prévio sobre os dados disponíveis para um estudo e das variáveis que eles envolvem. <br>
 #### Depois que os dados são coletados e armazenados em um banco de dados, a análise descritiva é o primeiro passo dentro do AED. Nessa etapa, os pesquisadores se familiarizam e organizam esses dados de forma sintetizada para saber que tipo de informações podem ser tiradas deles.
 #### Dito de outra forma, antes de realizar uma análise exploratória de dados, temos que preparar esses dados para que se tornem analisáveis. Há um conjunto de tarefas envolvido nesse processo.
 #### Identificar quais são as variáveis envolvidas e como elas se relacionam;
@@ -59,9 +59,11 @@
 
 #### Análise Exploratória de Dados (RStudio) - Pacotes e Biblioteca
 
-#### Mapear diretorio onde esta salva a base de dados
+#### Mapear diretorio onde esta salvo a base de dados
 
-```setwd("inserir directorio do arquivo"") # Ou Ctrl + Shift + H```
+````
+setwd("inserir directorio do arquivo"") # Ou Ctrl + Shift + H
+````
 
 #### Pacotes necessários
 
@@ -93,4 +95,21 @@ library(rpart)
 library(rpart.plot)
 library(C50)
 library(gmodels)
+````
+#### Retirar a notacao cientifica
+````
+options(scipen = 999) 				
+````
+
+#### Leitura da base de dados
+````
+emprestimo <- read_excel("Regressao logistica.xlsx", sheet = "Emprestimo - Dados")							
+````
+
+#### Analise exploratoria dos dados - Univariada
+
+#### Cabecalho
+````
+head(emprestimo, 15) # Cabecalho contento as 15 primeiras linhas do dataframe
+tail(emprestimo, 15) # Calda contento as 15 ultimas linhas do dataframe
 ````
