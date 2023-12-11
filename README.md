@@ -64,12 +64,18 @@
 #### setwd("inserir directorio do arquivo"") #### Ou Ctrl + Shift + H
 
 #### Pacotes necessarios
-#### install.packages("readxl") *** Para leitura de dados Excel
-install.packages("Information") # Para calculo IV
-install.packages("car“) # Para analise de regressao e diagnostico de modelos 
-install.packages("cutpoint") # Para calculo ponto de corte
-install.packages("ROCR") # Para calculo KS e AUC
-install.packages("ggplot2") # Para criacao de tabelas e graficos
-install.packages("dplyr") # Pra manipulacao e transformacao dados
+````install.packages("readxl")```` # Para leitura de dados Excel <br> 
+````install.packages("Information")```` # Para calculo IV <br>
+````install.packages("car")````				  # Para analise de regressao e diagnostico de modelos 
+install.packages("cutpointr")				  # Para calculo ponto de corte
+install.packages("ROCR")	            # Para calculo KS e AUC			
+install.packages("dplyr")             # Para manipulacao e transformacao dados
+install.packages("psych")             # Para analise psicometrica e estatisitca
+installed.packages()                  # Para verificar bibliotecas instaladas
+install.packages("rpart")             # Para decision tree
+install.packages("rpart.plot")        # Para visualização descision tree
+install.packages("C50")               # Algoritmo C50
+install.packages("gmodels")           # Matriz de contigencia
+
 
 
