@@ -143,3 +143,6 @@ par(mfrow = c(1,2)) # Inserir 2 graficos na mesma tela
 boxplot(emprestimo$Idade, col = "darkturquoise", main = "Idade") # Bloxplot Idade
 hist(emprestimo$Idade, main = "Histograma Idade", col = "darkturquoise", ylab = "Frequencia", xlab = "Idade") # Histograma Idade
 ````
+<div align="center">
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/a0f8c105-c639-47ca-8a25-e234d4437995.png" width="700px" />
+</div>
