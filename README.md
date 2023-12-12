@@ -170,3 +170,18 @@ hist(emprestimo$Tempo_Endereco, main = "Histograma Tempo_Endereco", col = "green
 <div align="center">
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/2b0654ef-6481-4f64-8442-ec106bbd5ca6.png" width="600px" />
 </div>
+
+#### Análise: Analisando os dados do boxplot da variável Tempo_Endereco, pode-se observar poucos valores outliers (2,56%), onde os dados indicam que, para uma base de 5.000 clientes 25% tem menos de 3 de tempo endereço e média de 8,2 anos. Já analisando os dados do histograma, pode-se observar que a distribuição é assimétrica à direita, onde 67,76% dos clientes tem tempo de residência entre 0 e 10,2 anos aproximadamente, que são capturadas pelas maiores porções do gráfico.
+
+#### Boxplot e histograma - Renda
+````
+par(mfrow = c(1,2)) # Inserir 2 graficos na mesma tela
+boxplot(emprestimo$Renda, col = "darkblue", main = "Boxplot Renda") # Boxplot Renda
+hist(emprestimo$Renda, main = "Histograma Renda", col = "darkblue", ylab = "Frequencia", xlab = "Renda") # Histograma Renda
+````
+<div align="center">
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/b4c5abae-c925-467e-a21e-7948430d68a0.png" width="600px" />
+</div>
+
+#### Análise: Analisando os dados do boxplot da variável Renda, pode-se observar poucos valores outliers (0,42%), onde os dados indicam que, para uma base de 5.000 clientes 75% ganham menos de 4,6 salários mínimos e média de 3,9. Já analisando os dados do histograma da variável Renda, pode-se observar que a distribuição é assimétrica à direita, onde 60,5% dos clientes tem rendas entre 1,8 e 4,6 salários aproximadamente, que é capturada pela maior porção do gráfico.
+#### Extra: De acordo com a base de dados, apenas 0,42% da população tem renda entre 21,3 e 38 salários mínimos, que representa (ou tende a representar) a desigualdade de renda existente no País.
