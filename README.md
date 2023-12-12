@@ -146,3 +146,6 @@ hist(emprestimo$Idade, main = "Histograma Idade", col = "darkturquoise", ylab = 
 <div align="center">
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/a0f8c105-c639-47ca-8a25-e234d4437995.png" width="500px" />
 </div>
+
+#### Achados estatísticos: Analisando os dados do boxplot da variável Idade, pode-se observar poucos valores discrepantes (outliers), onde os dados indicam que, para uma base de 5.000 clientes 25% tem menos de 37 anos e idade média de 48 anos. Já analisando os dados do histograma da variável Idade, pode-se observar que a distribuição tende à “normal” com leve assimetria à direita, onde 65,56% dos clientes tem idades entre 28 e 55 anos aproximadamente, que são representas pelas maiores porções do gráfico.
+
