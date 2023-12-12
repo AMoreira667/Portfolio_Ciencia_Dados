@@ -134,7 +134,7 @@ summary(emprestimo[,-1]) # Medidas de posicao
 describe(emprestimo[,-1]) # Medidas de dispersao
 ````
 <div align="center">
-<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/a1a6cdc2-37e5-4f55-b81e-3a476583eae7.png" width="700px" />
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/a1a6cdc2-37e5-4f55-b81e-3a476583eae7.png" width="500px" />
 </div>
 
 #### Boxplot e histograma - Idade
@@ -144,5 +144,5 @@ boxplot(emprestimo$Idade, col = "darkturquoise", main = "Idade") # Bloxplot Idad
 hist(emprestimo$Idade, main = "Histograma Idade", col = "darkturquoise", ylab = "Frequencia", xlab = "Idade") # Histograma Idade
 ````
 <div align="center">
-<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/a0f8c105-c639-47ca-8a25-e234d4437995.png" width="700px" />
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/a0f8c105-c639-47ca-8a25-e234d4437995.png" width="500px" />
 </div>
