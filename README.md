@@ -168,5 +168,5 @@ boxplot(emprestimo$Tempo_Endereco, col = "green", main = "Boxplot Tempo_Endereco
 hist(emprestimo$Tempo_Endereco, main = "Histograma Tempo_Endereco", col = "green", ylab = "Frequencia", xlab = "Tempo_Endereco") # Histograma Tempo_Endereco
 ````
 <div align="center">
-<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/2b0654ef-6481-4f64-8442-ec106bbd5ca6.png" width="500px" />
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/2b0654ef-6481-4f64-8442-ec106bbd5ca6.png" width="600px" />
 </div>
