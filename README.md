@@ -140,7 +140,7 @@ describe(emprestimo[,-1]) # Medidas de dispersao
 #### Boxplot e histograma - Idade
 ````
 par(mfrow = c(1,2)) # Inserir 2 graficos na mesma tela
-boxplot(emprestimo$Idade, col = "darkturquoise", main = "Idade") # Bloxplot Idade
+boxplot(emprestimo$Idade, col = "darkturquoise", main = "Boxplot Idade") # Bloxplot Idade
 hist(emprestimo$Idade, main = "Histograma Idade", col = "darkturquoise", ylab = "Frequencia", xlab = "Idade") # Histograma Idade
 ````
 <div align="center">
@@ -149,7 +149,7 @@ hist(emprestimo$Idade, main = "Histograma Idade", col = "darkturquoise", ylab = 
 
 #### Análise: Analisando os dados do boxplot da variável Idade, pode-se observar poucos valores discrepantes (outliers), onde os dados indicam que, para uma base de 5.000 clientes 25% tem menos de 37 anos e idade média de 48 anos. Já analisando os dados do histograma, pode-se observar que a distribuição tende à “normal”, onde 65,56% dos clientes tem idades entre 28 e 55 anos aproximadamente, que são representas pelas maiores porções do gráfico.
 
-#### Boxplot e histograma - Tempo Experiencia
+#### Boxplot e histograma - Tempo_Experiencia
 ````
 par(mfrow = c(1,2))	# Inserir 2 graficos na mesma tela
 boxplot(emprestimo$Tempo_Experiencia, col = "red", main = "Tempo Experiencia") # Boxplot Tempo Experiencia
