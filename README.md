@@ -188,7 +188,7 @@ hist(emprestimo$Renda, main = "Histograma Renda", col = "darkblue", ylab = "Freq
 
 #### Boxplot e histograma - Debito_Renda
 ````
-par(mfrow = c(1,2))	# Inserir 2 graficos na mesma tela
+par(mfrow = c(1,2) # Inserir 2 graficos na mesma tela
 boxplot(emprestimo$Debito_Renda, col = "yellow", main = "Boxplot Debito_Renda") # Boxplot Debito_Renda
 hist(emprestimo$Debito_Renda, main = "Histograma Debito_Renda", col = "yellow", ylab = "Frequencia", xlab = "Debito_Renda") # Histograma Debito_Renda
 ````
