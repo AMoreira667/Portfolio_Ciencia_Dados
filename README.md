@@ -127,15 +127,19 @@ tail(emprestimo, 15) # Calda contento as 15 ultimas linhas do dataframe
 ````
 summary(emprestimo[,-1]) # Medidas de posicao 
 ````
-
 <div align="center">
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/e3645e0e-edf2-42fe-82c5-75a93bbdcd3e.png" width="700px" />
 </div>
-
 ````
 describe(emprestimo[,-1]) # Medidas de dispersao
 ````
-
 <div align="center">
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/a1a6cdc2-37e5-4f55-b81e-3a476583eae7.png" width="700px" />
 </div>
+
+#### Boxplot e histograma - Idade
+````
+par(mfrow = c(1,2)) # Inserir 2 graficos na mesma tela
+boxplot(emprestimo$Idade, col = "darkturquoise", main = "Idade") # Bloxplot Idade
+hist(emprestimo$Idade, main = "Histograma Idade", col = "darkturquoise", ylab = "Frequencia", xlab = "Idade") # Histograma Idade
+````
