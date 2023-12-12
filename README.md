@@ -144,7 +144,7 @@ boxplot(emprestimo$Idade, col = "darkturquoise", main = "Idade") # Bloxplot Idad
 hist(emprestimo$Idade, main = "Histograma Idade", col = "darkturquoise", ylab = "Frequencia", xlab = "Idade") # Histograma Idade
 ````
 <div align="center">
-<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/a0f8c105-c639-47ca-8a25-e234d4437995.png" width="500px" />
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/2931ea1b-94de-4b38-89af-8cc26b9a792f.png" width="600px" />
 </div>
 
 #### Análise: Analisando os dados do boxplot da variável Idade, pode-se observar poucos valores discrepantes (outliers), onde os dados indicam que, para uma base de 5.000 clientes 25% tem menos de 37 anos e idade média de 48 anos. Já analisando os dados do histograma, pode-se observar que a distribuição tende à “normal”, onde 65,56% dos clientes tem idades entre 28 e 55 anos aproximadamente, que são representas pelas maiores porções do gráfico.
@@ -161,3 +161,12 @@ hist(emprestimo$Tempo_Experiencia, main = "Histograma Tempo Experiencia", col = 
 
 #### Análise: Analisando os dados do boxplot da variável Tempo_Experiencia, pode-se observar a ausência valores descrepantes (outliers), onde os dados indicam que, para uma base de 5.000 clientes 75% tem menos de 22 de experiência e média de 14 anos. Já analisando os dados do histograma, pode-se observar que a distribuição é assimétrica à direita, onde 54,94% dos clientes tem tempo de experiência entre 0 e 13 anos aproximadamente, que são representas pelas maiores porções do gráfico.
 
+#### Boxplot e histograma - Tempo Experiencia
+````
+par(mfrow = c(1,2))	# Inserir 2 graficos na mesma tela
+boxplot(emprestimo$Tempo_Endereco, col = "green", main = "Tempo Endereco") # Boxplot Tempo Endereco
+hist(emprestimo$Tempo_Endereco, main = "Histograma Tempo Endereco", col = "green", ylab = "Frequencia", xlab = "Tempo Endereco") # Histograma Tempo Endereco
+````
+<div align="center">
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/3b80cb04-77fb-44fb-9e60-3d77ccfa8a9d.png" width="500px" />
+</div>
