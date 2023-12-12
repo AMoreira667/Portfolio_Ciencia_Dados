@@ -188,7 +188,7 @@ hist(emprestimo$Renda, main = "Histograma Renda", col = "darkblue", ylab = "Freq
 
 #### Boxplot e histograma - Debito_Renda
 ````
-par(mfrow = c(1,2) # Inserir 2 graficos na mesma tela
+par(mfrow = c(1,2)) # Inserir 2 graficos na mesma tela
 boxplot(emprestimo$Debito_Renda, col = "yellow", main = "Boxplot Debito_Renda") # Boxplot Debito_Renda
 hist(emprestimo$Debito_Renda, main = "Histograma Debito_Renda", col = "yellow", ylab = "Frequencia", xlab = "Debito_Renda") # Histograma Debito_Renda
 ````
@@ -197,3 +197,15 @@ hist(emprestimo$Debito_Renda, main = "Histograma Debito_Renda", col = "yellow", 
 </div>
 
 #### Análise: Analisando os dados do boxplot da variável Debito_Renda, pode-se observar poucos valores outliers (0,6%), onde os dados indicam que, para uma base de 5.000 clientes 25% tem débitos de 5 salários em relação a renda atual e média de 10. Já analisando os dados do histograma, pode-se observar que a distribuição é assimétrica à direita, onde 52,8% dos clientes tem débitos em relação a renda entre 0,08 e 12,9 aproximadamente, que são capturadas pelas maiores porções do gráfico.
+
+#### Boxplot e histograma - Variacao_Debito
+````
+par(mfrow = c(1,2)) # Inserir 2 graficos na mesma tela
+boxplot(emprestimo$Variacao_Debito, col = "darkgrey", main = "Boxplot Variacao_Debito") # Boxplot Variacao_Debito
+hist(emprestimo$Variacao_Debito, main = "Histograma Variacao_Debito", col = "darkgrey", ylab = "Frequencia", xlab = "Variacao_Debito") # Histograma Variacao_Debito
+````
+<div align="center">
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/2e0896e1-3270-491c-ae63-9b702388453e.png" width="600px" />
+</div>
+
+#### Análise: Analisando os dados do boxplot da variável Variacao_Debito, pode-se observar valores outliers (11,9%), onde os dados indicam que, para uma base de 5.000 clientes 75% tem variações de 0,17 em relação a 6 meses atrás e média de -0,43. Já analisando os dados do histograma, pode-se observar que a distribuição é assimétrica à direita, onde 88,1% dos clientes tem variações de debito em relação a 6 meses atrás entre -1 e 1,57 aproximadamente, que são capturadas pelas maiores porções do gráfico.
