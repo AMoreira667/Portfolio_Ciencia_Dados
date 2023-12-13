@@ -82,6 +82,7 @@ install.packages("psych")             # Para analise psicometrica e estatisitca
 install.packages("C50")               # Decision tree algoritmo C5.0
 install.packages("gmodels")           # Matriz de contigencia
 installed.packages()                  # Para verificar bibliotecas instaladas
+install.packages("GGally")            # Correlograma
 ````
 #### Bibliotecas necessárias
 ````
@@ -94,6 +95,7 @@ library(dplyr)
 library(psych)
 library(C50)
 library(gmodels)
+library(GGally)
 ````
 #### Retirar a notacao cientifica
 ````
