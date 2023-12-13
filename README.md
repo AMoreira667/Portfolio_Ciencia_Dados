@@ -237,3 +237,5 @@ IV$Summary
 <div align="center">
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/955b1939-2fc1-4336-a5ae-f2c6d838b85e.png" width="600px" />
 </div>
+
+#### Análise: Analisando os dados, a variável Debito_Renda tem maior grau de explicabilidade sobre a variável resposta, seguidas da variáveis Tempo_Endereço e Variacao_Debito sucessivamente.
