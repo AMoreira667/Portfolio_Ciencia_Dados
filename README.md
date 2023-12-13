@@ -234,3 +234,6 @@ boxplot(Variacao_Debito ~ Classif, data = emprestimo, col = "darkgrey", main = "
 IV <- create_infotables(data = emprestimo[,c(2:8)], y = "Classif") # Information Value - library("information")
 IV$Summary	
 ````
+<div align="center">
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/955b1939-2fc1-4336-a5ae-f2c6d838b85e.png" width="600px" />
+</div>
