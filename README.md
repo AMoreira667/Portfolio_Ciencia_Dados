@@ -209,3 +209,19 @@ hist(emprestimo$Variacao_Debito, main = "Histograma Variacao_Debito", col = "dar
 </div>
 
 #### Análise: Analisando os dados do boxplot da variável Variacao_Debito, pode-se observar valores outliers (11,9%), onde os dados indicam que, para uma base de 5.000 clientes 75% tem variações de 0,17 em relação a 6 meses atrás e média de -0,43. Já analisando os dados do histograma, pode-se observar que a distribuição é assimétrica à direita, onde 88,1% dos clientes tem variações de debito em relação a 6 meses atrás entre -1 e 1,57 aproximadamente, que são capturadas pelas maiores porções do gráfico.
+
+#### Analise exploratoria dos dados - Bivariada
+````
+par(mfrow = c(2, 3))	
+boxplot(Idade ~ Classif, data = emprestimo, col = "darkturquoise", main = "Boxplot Idade") # Idade x Classif					
+boxplot(Tempo_Experiencia ~ Classif, data = emprestimo, col = "red", main = "Boxplot Tempo_Experiencia") # Tempo_Experiencia x Classif
+boxplot(Tempo_Endereco ~ Classif, data = emprestimo, col = "green", main = "Boxplot Tempo_Endereco") # Tempo_Endereco x Classif
+boxplot(Renda ~ Classif, data = emprestimo, col = "darkblue", main = "Boxplot Renda") # Renda x Classif
+boxplot(Debito_Renda ~ Classif, data = emprestimo, col = "yellow", main = "Boxplot Debito_Renda") # Debito_Renda x Classif
+boxplot(Variacao_Debito ~ Classif, data = emprestimo, col = "darkgrey", main = "Boxplot Variacao_Debito") # Variacao_Debito x Classif
+````
+<div align="center">
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/ba9d6067-a9c7-40f8-b997-ddf04f022cc6.png" width="600px" />
+</div>
+
+#### Análise: Analisando os dados do boxplot da variável explicativa Debtio_Renda x variável resposta Classif, pode-se observar uma relação entre essas variáveis devido a disparidade entre os “0” e “1”.
