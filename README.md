@@ -269,3 +269,21 @@ ggpairs(emprestimo[,c(2:8)], title="Correlograma") # Correlograma - library(GGal
 <div align="center">
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/42be88d4-c8fa-4742-b185-ae947c8d1b50.png" width="600px" />
 </div>
+
+````
+regressao_log <- glm(Classif ~ Idade + 
+                     Tempo_Experiencia + 
+                     Tempo_Endereco + 
+                     Renda + 
+                     Debito_Renda +
+                     Variacao_Debito, 
+                     binomial(link = "logit"), 
+                     data = emprestimo)
+summary(regressao_log)
+````
+<div align="center">
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/05c2dade-d92b-4e9f-8cb8-8fcfc1b7f286.png" width="600px" />
+</div>
+
+#### Análise: No processo de construção do modelo deve-se retirar, a cada passo, a variável com menor significância estatística. Como estamos adotando 95% de confiança, deve-se retirar variáveis cujo p-valor seja maior do que 5%. Esse procedimento é conhecido como Stepwise.
+#### A variável explicativa Tempo_Experiencia apresenta p-valor acima de 5%. Logo, não é um aspecto estatisticamente significativo para explicar a decisão de conceder empréstimo e pode ser retirado do modelo. 
