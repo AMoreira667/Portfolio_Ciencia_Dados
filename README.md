@@ -266,3 +266,6 @@ ggpairs(emprestimo[,c(2:8)], title="Correlograma") # Correlograma - library(GGal
 #### Na regressão logística múltipla, o objetivo é estimar os coeficientes das variáveis independentes de forma a entender como cada uma delas contribui para a probabilidade de um evento ocorrer. 
 #### A principal diferença em relação à regressão linear é que a regressão logística modela a relação entre as variáveis independentes e a log-odds da probabilidade do evento acontecer. A log-odds é a transformação logarítmica das probabilidades e é uma forma conveniente de trabalhar com problemas de classificação binária.
 
+<div align="center">
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/42be88d4-c8fa-4742-b185-ae947c8d1b50.png" width="600px" />
+</div>
