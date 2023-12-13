@@ -256,3 +256,13 @@ ggpairs(emprestimo[,c(2:8)], title="Correlograma") # Correlograma - library(GGal
 #### 3 - Preparação dos Dados (Data Preparation)
 
 #### Como a base de dados já foi previamente tratada, vamos pular para a etapa de Modelagem.
+
+#### 4 - Modelagem (Modeling)
+
+#### Regressão Logística
+
+#### A modelagem estatística tradicional é uma abordagem que envolve o uso de métodos estatísticos clássicos para analisar dados e fazer inferências sobre populações ou processos subjacentes. Essa abordagem é frequentemente utilizada para entender as relações entre variáveis, realizar previsões e tomar decisões informadas com base em evidências quantitativas. 
+#### A regressão logística múltipla é uma técnica estatística utilizada para modelar a relação entre uma variável binária (ou dicotômica) dependente e várias variáveis independentes, que podem ser tanto numéricas quanto categóricas. Essa técnica é uma extensão da regressão logística simples, que lida com apenas uma variável independente.
+#### Na regressão logística múltipla, o objetivo é estimar os coeficientes das variáveis independentes de forma a entender como cada uma delas contribui para a probabilidade de um evento ocorrer. 
+#### A principal diferença em relação à regressão linear é que a regressão logística modela a relação entre as variáveis independentes e a log-odds da probabilidade do evento acontecer. A log-odds é a transformação logarítmica das probabilidades e é uma forma conveniente de trabalhar com problemas de classificação binária.
+
