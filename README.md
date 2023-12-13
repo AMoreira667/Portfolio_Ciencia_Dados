@@ -301,7 +301,7 @@ regressao_log <- glm(Classif ~ Idade +
 summary(regressao_log)
 ````
 <div align="center">
-<img src="(https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/addb3371-2df2-48f0-a0d3-c3570c3afd9e.png" width="600px" />
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/addb3371-2df2-48f0-a0d3-c3570c3afd9e.png" width="600px" />
 </div>
 
 #### Analisando os p-valores obtidos pelo modelo, consegue-se estatisticamente sustentar são as variáveis Debito_Renda¹, Tempo_Endereco², Variacao_Debito³ e Renda4 são variáveis significativas, adotando um nível de confiança de 95%. Logo, são aspectos estatisticamente significativos para explicar a decisão de conceder empréstimo, e devem ser mantidos no modelo.
