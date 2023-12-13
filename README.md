@@ -225,3 +225,12 @@ boxplot(Variacao_Debito ~ Classif, data = emprestimo, col = "darkgrey", main = "
 </div>
 
 #### Análise: Analisando os dados do boxplot da variável explicativa Debtio_Renda x variável resposta Classif, pode-se observar uma relação entre essas variáveis devido a disparidade entre os “0” e “1”.
+
+#### Analise exploratoria dos dados - Bivariada com Information Value (IV)
+
+#### O Valor da Informação, ou Information Value (IV), é um indicador que mensura a força da relação entre duas variáveis, sejam elas numéricas ou categóricas. No contexto da regressão logística, o IV é calculado entre as variáveis explicativas (numéricas ou categóricas) versus a variável resposta (binária) na fase de análise bivariada, sendo útil para realizar uma avaliação prévia de quais variáveis explicativas têm maior potencial de discriminação para a posterior construção de um modelo. Quanto maior o valor do IV, maior o grau de explicabilidade da variável explicativa sobre a resposta. Em grande parte das situações práticas, seu valor varia entre 0 a 0,5, ainda que possa assumir quaisquer valores positivos. 
+
+````
+IV <- create_infotables(data = emprestimo[,c(2:8)], y = "Classif") # Information Value - library("information")
+IV$Summary	
+````
