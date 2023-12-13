@@ -212,7 +212,7 @@ hist(emprestimo$Variacao_Debito, main = "Histograma Variacao_Debito", col = "dar
 
 #### Analise exploratoria dos dados - Bivariada
 ````
-par(mfrow = c(2, 3))	
+par(mfrow = c(2, 3)) # Inserir 2 graficos na mesma tela	
 boxplot(Idade ~ Classif, data = emprestimo, col = "darkturquoise", main = "Boxplot Idade") # Idade x Classif					
 boxplot(Tempo_Experiencia ~ Classif, data = emprestimo, col = "red", main = "Boxplot Tempo_Experiencia") # Tempo_Experiencia x Classif
 boxplot(Tempo_Endereco ~ Classif, data = emprestimo, col = "green", main = "Boxplot Tempo_Endereco") # Tempo_Endereco x Classif
@@ -221,7 +221,7 @@ boxplot(Debito_Renda ~ Classif, data = emprestimo, col = "yellow", main = "Boxpl
 boxplot(Variacao_Debito ~ Classif, data = emprestimo, col = "darkgrey", main = "Boxplot Variacao_Debito") # Variacao_Debito x Classif
 ````
 <div align="center">
-<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/ba9d6067-a9c7-40f8-b997-ddf04f022cc6.png" width="600px" />
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/dbe4180b-814f-4f71-9df7-33454f1c60ff.png" width="600px" />
 </div>
 
 #### Análise: Analisando os dados do boxplot da variável explicativa Debtio_Renda x variável resposta Classif, pode-se observar uma relação entre essas variáveis devido a disparidade entre os “0” e “1”.
