@@ -253,3 +253,6 @@ ggpairs(emprestimo[,c(2:8)], title="Correlograma") # Correlograma - library(GGal
 
 #### Análise: Analisando os dados correlograma, a variável Debito_Renda parece ter maior grau de explicabilidade (apesar do baixo nível de correlação -0,379) sobre a variável resposta. As demais variávies apresentam baixos níveis de correlação.
 
+#### 3 - Preparação dos Dados (Data Preparation)
+
+#### Como a base de dados já foi previamente tratada, vamos pular para a etapa de Modelagem.
