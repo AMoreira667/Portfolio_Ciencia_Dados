@@ -240,4 +240,16 @@ IV$Summary
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/955b1939-2fc1-4336-a5ae-f2c6d838b85e.png" width="600px" />
 </div>
 
-#### Análise: Analisando os dados, a variável Debito_Renda tem maior grau de explicabilidade sobre a variável resposta, seguidas da variáveis Tempo_Endereço e Variacao_Debito sucessivamente.
+#### Análise: Analisando os dados, a variável Debito_Renda parece ter maior grau de explicabilidade sobre a variável resposta.
+
+#### Analise exploratoria dos dados - Bivariada com Correlograma
+````
+# Analise exploratoria dos dados - Correlograma
+ggpairs(emprestimo[,c(2:8)], title="Correlograma") # Correlograma - library(GGally) 				
+````
+<div align="center">
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/6d8d9b69-51f9-46f6-84d1-ec36c2108f14.png" width="600px" />
+</div>
+
+#### Análise: Analisando os dados correlograma, a variável Debito_Renda parece ter maior grau de explicabilidade (apesar do baixo nível de correlação -0,379) sobre a variável resposta. As demais variávies apresentam baixos níveis de correlação.
+
