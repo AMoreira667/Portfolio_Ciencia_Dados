@@ -259,7 +259,7 @@ ggpairs(emprestimo[,c(2:8)], title="Correlograma") # Correlograma - library(GGal
 
 #### 4 - Modelagem (Modeling)
 
-#### Regressão Logística
+#### Regressão Logística (RStudio)
 
 #### A modelagem estatística tradicional é uma abordagem que envolve o uso de métodos estatísticos clássicos para analisar dados e fazer inferências sobre populações ou processos subjacentes. Essa abordagem é frequentemente utilizada para entender as relações entre variáveis, realizar previsões e tomar decisões informadas com base em evidências quantitativas. 
 #### A regressão logística múltipla é uma técnica estatística utilizada para modelar a relação entre uma variável binária (ou dicotômica) dependente e várias variáveis independentes, que podem ser tanto numéricas quanto categóricas. Essa técnica é uma extensão da regressão logística simples, que lida com apenas uma variável independente.
@@ -271,6 +271,7 @@ ggpairs(emprestimo[,c(2:8)], title="Correlograma") # Correlograma - library(GGal
 </div>
 
 ````
+# Modelagem estatistica tradicional - Regressao logisttica
 regressao_log <- glm(Classif ~ Idade + 
                      Tempo_Experiencia + 
                      Tempo_Endereco + 
@@ -285,5 +286,22 @@ summary(regressao_log)
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/05c2dade-d92b-4e9f-8cb8-8fcfc1b7f286.png" width="600px" />
 </div>
 
-#### Análise: No processo de construção do modelo deve-se retirar, a cada passo, a variável com menor significância estatística. Como estamos adotando 95% de confiança, deve-se retirar variáveis cujo p-valor seja maior do que 5%. Esse procedimento é conhecido como Stepwise.
+#### No processo de construção do modelo deve-se retirar, a cada passo, a variável com menor significância estatística. Como estamos adotando 95% de confiança, deve-se retirar variáveis cujo p-valor seja maior do que 5%. Esse procedimento é conhecido como Stepwise.
 #### A variável explicativa Tempo_Experiencia apresenta p-valor acima de 5%. Logo, não é um aspecto estatisticamente significativo para explicar a decisão de conceder empréstimo e pode ser retirado do modelo. 
+
+````
+# Modelagem estatistica tradicional - Retiradno a variavel Tempo_Experiencia
+regressao_log <- glm(Classif ~ Idade + 
+                     Tempo_Endereco + 
+                     Renda + 
+                     Debito_Renda +
+                     Variacao_Debito, 
+                     binomial(link = "logit"), 
+                     data = emprestimo)
+summary(regressao_log)
+````
+<div align="center">
+<img src="(https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/addb3371-2df2-48f0-a0d3-c3570c3afd9e.png" width="600px" />
+</div>
+
+#### Analisando os p-valores obtidos pelo modelo, consegue-se estatisticamente sustentar são as variáveis Debito_Renda¹, Tempo_Endereco², Variacao_Debito³ e Renda4 são variáveis significativas, adotando um nível de confiança de 95%. Logo, são aspectos estatisticamente significativos para explicar a decisão de conceder empréstimo, e devem ser mantidos no modelo.
