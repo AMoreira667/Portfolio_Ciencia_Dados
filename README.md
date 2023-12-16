@@ -306,3 +306,6 @@ summary(regressao_log)
 
 #### Tendo em vista que todas as variáveis são importantes, pode-se calcular a probabilidade final de uma pessoa ser inadimplente de forma consistente da seguinte forma:
 
+<div align="center">
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/1b3cdaf1-9637-41bc-a483-fa537417e59c.png" width="600px" />
+</div>
