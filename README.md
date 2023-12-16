@@ -303,3 +303,6 @@ summary(regressao_log)
 #### Analisando os p-valores obtidos pelo modelo, consegue-se estatisticamente sustentar são as variáveis Debito_Renda¹, Tempo_Endereco², Variacao_Debito³ e Renda4 são variáveis significativas, adotando um nível de confiança de 95%. Logo, são aspectos estatisticamente significativos para explicar a decisão de conceder empréstimo, e devem ser mantidos no modelo.
 
 #### Cálculo das Estimativas
+
+#### Tendo em vista que todas as variáveis são importantes, pode-se calcular a probabilidade final de uma pessoa ser inadimplente de forma consistente da seguinte forma:
+
