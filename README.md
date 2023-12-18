@@ -309,3 +309,5 @@ summary(regressao_log)
 <div align="center">
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/1b3cdaf1-9637-41bc-a483-fa537417e59c.png" width="600px" />
 </div>
+
+#### Por exemplo, uma pessoa com 37 anos de Idade, com 10 anos de Tempo_Endereco, com Renda de 7,9 salários mínimos, com 15,8 de Debito_Renda e com -0,16 de Variacao_Debito, teriamos: 
