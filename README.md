@@ -349,7 +349,7 @@ summary(regressao_log)
 
 ````
 # Obtendo a probabilidade estimada de para cada cliente					
-emprestimo$Probabilidade <- predict(regressao_log, emprestimo, type = "response")	# Criar coluna com as probabilidades estimadas 
+emprestimo$Probabilidade <- predict(regressao_log, emprestimo, type = "response") # Criar coluna com as probabilidades estimadas 
 ````
 
 <div align="center">
@@ -377,9 +377,4 @@ vif(regressao_log)
 
 #### Análise: Interpretatando os dados se saída, não há evidencias claras de multicolinearidade no modelo, pois todos os valores foram menores que 4, podendo seguir com as próximas etapas.
 
-#### Obtendo as Probabilidades Estimadas para Cada Cliente
 
-````
-# Obtendo a probabilidade estimada de para cada cliente					
-emprestimo$Probabilidade <- predict(regressao_log, emprestimo, type = "response")	# Criar coluna com as probabilidades estimadas no R 
-````
