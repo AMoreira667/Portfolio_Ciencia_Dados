@@ -90,6 +90,7 @@ installed.packages()                  # Para verificar bibliotecas instaladas
 install.packages("GGally")            # Correlograma
 ````
 #### Bibliotecas necessárias
+
 ````
 library(readxl)				
 library(Information)				
@@ -103,11 +104,13 @@ library(gmodels)
 library(GGally)
 ````
 #### Retirar a notacao cientifica
+
 ````
 options(scipen = 999) 				
 ````
 
 #### Leitura da base de dados
+
 ````
 emprestimo <- read_excel("Regressao logistica.xlsx", sheet = "Emprestimo - Dados")							
 ````
@@ -115,9 +118,11 @@ emprestimo <- read_excel("Regressao logistica.xlsx", sheet = "Emprestimo - Dados
 #### Analise exploratoria dos dados - Univariada
 
 #### Cabecalho
+
 ````
 head(emprestimo, 15) # Cabecalho contento as 15 primeiras linhas do dataframe
 ````
+
 <div align="center">
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/823031af-c0f6-4464-a681-3fcc89a72307.png" width="700px" />
 </div>
@@ -125,11 +130,13 @@ head(emprestimo, 15) # Cabecalho contento as 15 primeiras linhas do dataframe
 ````
 tail(emprestimo, 15) # Calda contento as 15 ultimas linhas do dataframe
 ````
+
 <div align="center">
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/d42a2af9-f020-4871-b9a0-2b0c3832ca37.png" width="700px" />
 </div>
 
 #### Medidas resumo
+
 ````
 summary(emprestimo[,-1]) # Medidas de posicao 
 ````
@@ -145,6 +152,7 @@ describe(emprestimo[,-1]) # Medidas de dispersao
 </div>
 
 #### Boxplot e histograma - Idade
+
 ````
 par(mfrow = c(1,2)) # Inserir 2 graficos na mesma tela
 boxplot(emprestimo$Idade, col = "darkturquoise", main = "Boxplot Idade") # Bloxplot Idade
@@ -157,11 +165,13 @@ hist(emprestimo$Idade, main = "Histograma Idade", col = "darkturquoise", ylab = 
 #### Análise: Analisando os dados do boxplot da variável Idade, pode-se observar poucos valores discrepantes (outliers), onde os dados indicam que, para uma base de 5.000 clientes 25% tem menos de 37 anos e idade média de 48 anos. Já analisando os dados do histograma, pode-se observar que a distribuição tende à “normal”, onde 65,56% dos clientes tem idades entre 28 e 55 anos aproximadamente, que são representas pelas maiores porções do gráfico.
 
 #### Boxplot e histograma - Tempo_Experiencia
+
 ````
 par(mfrow = c(1,2))	# Inserir 2 graficos na mesma tela
 boxplot(emprestimo$Tempo_Experiencia, col = "red", main = "Boxplot Tempo_Experiencia") # Boxplot Tempo_Experiencia
 hist(emprestimo$Tempo_Experiencia, main = "Histograma Tempo_Experiencia", col = "red", ylab = "Frequencia", xlab = "Tempo_Experiencia") # Histograma Tempo_Experiencia
 ````
+
 <div align="center">
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/a4e1ab92-52d0-496d-9418-588fa840a42d.png" width="600px" />
 </div>
@@ -169,11 +179,13 @@ hist(emprestimo$Tempo_Experiencia, main = "Histograma Tempo_Experiencia", col = 
 #### Análise: Analisando os dados do boxplot da variável Tempo_Experiencia, pode-se observar a ausência valores descrepantes (outliers), onde os dados indicam que, para uma base de 5.000 clientes 75% tem menos de 22 de experiência e média de 14 anos. Já analisando os dados do histograma, pode-se observar que a distribuição é assimétrica à direita, onde 54,94% dos clientes tem tempo de experiência entre 0 e 13 anos aproximadamente, que são representas pelas maiores porções do gráfico.
 
 #### Boxplot e histograma - Tempo_Experiencia
+
 ````
 par(mfrow = c(1,2))	
 boxplot(emprestimo$Tempo_Endereco, col = "green", main = "Boxplot Tempo_Endereco") # Boxplot Tempo Endereco
 hist(emprestimo$Tempo_Endereco, main = "Histograma Tempo_Endereco", col = "green", ylab = "Frequencia", xlab = "Tempo_Endereco") # Histograma Tempo_Endereco
 ````
+
 <div align="center">
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/2b0654ef-6481-4f64-8442-ec106bbd5ca6.png" width="600px" />
 </div>
@@ -181,11 +193,13 @@ hist(emprestimo$Tempo_Endereco, main = "Histograma Tempo_Endereco", col = "green
 #### Análise: Analisando os dados do boxplot da variável Tempo_Endereco, pode-se observar poucos valores outliers (2,56%), onde os dados indicam que, para uma base de 5.000 clientes 25% tem menos de 3 de tempo endereço e média de 8,2 anos. Já analisando os dados do histograma, pode-se observar que a distribuição é assimétrica à direita, onde 67,76% dos clientes tem tempo de residência entre 0 e 10,2 anos aproximadamente, que são capturadas pelas maiores porções do gráfico.
 
 #### Boxplot e histograma - Renda
+
 ````
 par(mfrow = c(1,2)) # Inserir 2 graficos na mesma tela
 boxplot(emprestimo$Renda, col = "darkblue", main = "Boxplot Renda") # Boxplot Renda
 hist(emprestimo$Renda, main = "Histograma Renda", col = "darkblue", ylab = "Frequencia", xlab = "Renda") # Histograma Renda
 ````
+
 <div align="center">
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/b4c5abae-c925-467e-a21e-7948430d68a0.png" width="600px" />
 </div>
@@ -194,11 +208,13 @@ hist(emprestimo$Renda, main = "Histograma Renda", col = "darkblue", ylab = "Freq
 #### Extra: De acordo com a base de dados, apenas 0,42% da população tem renda entre 21,3 e 38 salários mínimos, que representa (ou tende a representar) a desigualdade de renda existente no País.
 
 #### Boxplot e histograma - Debito_Renda
+
 ````
 par(mfrow = c(1,2)) # Inserir 2 graficos na mesma tela
 boxplot(emprestimo$Debito_Renda, col = "yellow", main = "Boxplot Debito_Renda") # Boxplot Debito_Renda
 hist(emprestimo$Debito_Renda, main = "Histograma Debito_Renda", col = "yellow", ylab = "Frequencia", xlab = "Debito_Renda") # Histograma Debito_Renda
 ````
+
 <div align="center">
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/b345178a-38a8-45ed-b721-1baaac77580b.png" width="600px" />
 </div>
@@ -206,11 +222,13 @@ hist(emprestimo$Debito_Renda, main = "Histograma Debito_Renda", col = "yellow", 
 #### Análise: Analisando os dados do boxplot da variável Debito_Renda, pode-se observar poucos valores outliers (0,6%), onde os dados indicam que, para uma base de 5.000 clientes 25% tem débitos de 5 salários em relação a renda atual e média de 10. Já analisando os dados do histograma, pode-se observar que a distribuição é assimétrica à direita, onde 52,8% dos clientes tem débitos em relação a renda entre 0,08 e 12,9 aproximadamente, que são capturadas pelas maiores porções do gráfico.
 
 #### Boxplot e histograma - Variacao_Debito
+
 ````
 par(mfrow = c(1,2)) # Inserir 2 graficos na mesma tela
 boxplot(emprestimo$Variacao_Debito, col = "darkgrey", main = "Boxplot Variacao_Debito") # Boxplot Variacao_Debito
 hist(emprestimo$Variacao_Debito, main = "Histograma Variacao_Debito", col = "darkgrey", ylab = "Frequencia", xlab = "Variacao_Debito") # Histograma Variacao_Debito
 ````
+
 <div align="center">
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/2e0896e1-3270-491c-ae63-9b702388453e.png" width="600px" />
 </div>
@@ -218,6 +236,7 @@ hist(emprestimo$Variacao_Debito, main = "Histograma Variacao_Debito", col = "dar
 #### Análise: Analisando os dados do boxplot da variável Variacao_Debito, pode-se observar valores outliers (11,9%), onde os dados indicam que, para uma base de 5.000 clientes 75% tem variações de 0,17 em relação a 6 meses atrás e média de -0,43. Já analisando os dados do histograma, pode-se observar que a distribuição é assimétrica à direita, onde 88,1% dos clientes tem variações de debito em relação a 6 meses atrás entre -1 e 1,57 aproximadamente, que são capturadas pelas maiores porções do gráfico.
 
 #### Analise exploratoria dos dados - Bivariada
+
 ````
 par(mfrow = c(2, 3)) # Inserir 2 graficos na mesma tela	
 boxplot(Idade ~ Classif, data = emprestimo, col = "darkturquoise", main = "Boxplot Idade") # Idade x Classif					
@@ -227,6 +246,7 @@ boxplot(Renda ~ Classif, data = emprestimo, col = "darkblue", main = "Boxplot Re
 boxplot(Debito_Renda ~ Classif, data = emprestimo, col = "yellow", main = "Boxplot Debito_Renda") # Debito_Renda x Classif
 boxplot(Variacao_Debito ~ Classif, data = emprestimo, col = "darkgrey", main = "Boxplot Variacao_Debito") # Variacao_Debito x Classif
 ````
+
 <div align="center">
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/dbe4180b-814f-4f71-9df7-33454f1c60ff.png" width="600px" />
 </div>
@@ -264,7 +284,7 @@ ggpairs(emprestimo[,c(2:8)], title="Correlograma") # Correlograma - library(GGal
 
 #### 4 - Modelagem (Modeling)
 
-#### Regressão Logística (RStudio)
+#### Regressão logística (RStudio)
 
 #### A modelagem estatística tradicional é uma abordagem que envolve o uso de métodos estatísticos clássicos para analisar dados e fazer inferências sobre populações ou processos subjacentes. Essa abordagem é frequentemente utilizada para entender as relações entre variáveis, realizar previsões e tomar decisões informadas com base em evidências quantitativas. 
 
@@ -291,6 +311,7 @@ summary(regressao_log)
 </div>
 
 #### No processo de construção do modelo deve-se retirar, a cada passo, a variável com menor significância estatística. Como estamos adotando 95% de confiança, deve-se retirar variáveis cujo p-valor seja maior do que 5%. Esse procedimento é conhecido como Stepwise.
+
 #### A variável explicativa Tempo_Experiencia apresenta p-valor acima de 5%. Logo, não é um aspecto estatisticamente significativo para explicar a decisão de conceder empréstimo e pode ser retirado do modelo. 
 
 ````
@@ -308,9 +329,9 @@ summary(regressao_log)
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/addb3371-2df2-48f0-a0d3-c3570c3afd9e.png" width="600px" />
 </div>
 
-#### Analisando os p-valores obtidos pelo modelo, consegue-se estatisticamente sustentar são as variáveis Debito_Renda¹, Tempo_Endereco², Variacao_Debito³ e Renda4 são variáveis significativas, adotando um nível de confiança de 95%. Logo, são aspectos estatisticamente significativos para explicar a decisão de conceder empréstimo, e devem ser mantidos no modelo.
+#### Analisando os p-valores obtidos pelo modelo, consegue-se estatisticamente sustentar são as variáveis Debito_Renda, Tempo_Endereco, Variacao_Debito e Renda são variáveis significativas, adotando um nível de confiança de 95%. Logo, são aspectos estatisticamente significativos para explicar a decisão de conceder empréstimo, e devem ser mantidos no modelo.
 
-#### Cálculo das Estimativas
+#### Cálculo das estimativas
 
 #### Tendo em vista que todas as variáveis são importantes, pode-se calcular a probabilidade final de uma pessoa ser inadimplente de forma consistente da seguinte forma:
 
@@ -322,6 +343,17 @@ summary(regressao_log)
 
 <div align="center">
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/d97a8075-09c7-4e46-81b6-949d48a67efa.png" width="600px" />
+</div>
+
+#### Obtendo as probabilidades estimadas para cada cliente
+
+````
+# Obtendo a probabilidade estimada de para cada cliente					
+emprestimo$Probabilidade <- predict(regressao_log, emprestimo, type = "response")	# Criar coluna com as probabilidades estimadas 
+````
+
+<div align="center">
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/c8011556-a8de-4799-9ed8-6feecbd75240.png" width="600px" />
 </div>
 
 #### Estatística VIF - Verificando Multicolinearidade
@@ -345,3 +377,9 @@ vif(regressao_log)
 
 #### Análise: Interpretatando os dados se saída, não há evidencias claras de multicolinearidade no modelo, pois todos os valores foram menores que 4, podendo seguir com as próximas etapas.
 
+#### Obtendo as Probabilidades Estimadas para Cada Cliente
+
+````
+# Obtendo a probabilidade estimada de para cada cliente					
+emprestimo$Probabilidade <- predict(regressao_log, emprestimo, type = "response")	# Criar coluna com as probabilidades estimadas no R 
+````
