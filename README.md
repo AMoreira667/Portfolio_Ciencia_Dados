@@ -316,3 +316,13 @@ summary(regressao_log)
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/d97a8075-09c7-4e46-81b6-949d48a67efa.png" width="600px" />
 </div>
 
+#### Estatística VIF (Multicolinearidade)
+
+#### Quando lidamos com uma regressão múltipla, ou seja, com 2 ou mais variáveis explicativas, algumas delas podem representar informações muito similares. Esse tipo de redundância, no contexto de análise de regressão, é denominado multicolinearidade. 
+
+#### ✓ A multicolinearidade ocorre quando variáveis explicativas fortemente associadas entre si são consideradas no mesmo modelo de regressão, seja linear ou logística. 
+
+#### ✓ A redundância de informação eleva potencialmente o nível de variabilidade dos parâmetros estimados (betas) associados às variáveis correlacionadas, distorcendo a sua interpretação. Isso torna o modelo instável e, muitas vezes, compromete a sua utilização para predições futuras.
+
+#### A estatística VIF (Variance Inflation Factor, ou Fator de Inflação da Variância) mensura o quanto a variância de cada coeficiente estimado do modelo está sendo inflacionada por conta de multicolinearidade. A partir de estudos anteriores, valores de VIF superiores a 4 já revelam sinais de multicolinearidade. 	
+
