@@ -470,9 +470,9 @@ print(auc)
 #### Análise:
 #### De acordo com o índice AUC (0,79) podemos afirmar que o modelo apresenta um bom desempenho.
 
-#### 4 - Modelagem (Modeling)
+## 4 - Modelagem (Modeling)
 
-# Modelagem com IA - Decision tree com algoritimo C5.0 (RStudio)
+#### Modelagem com IA - Decision tree com algoritimo C5.0 (RStudio)
 
 #### O algoritmo C5.0 constrói a árvore de decisão através da divisão da amostra de treinamento com base no teste que resulta na maior razão de ganho. Cada subconjunto obtido da primeira divisão é novamente divido pela aplicação de um novo teste e este processo é repetido até que nenhuma outra divisão seja possível. Por fim, a simplificação da árvore com a poda dos nós que não contribuem para a tarefa de classificação é realizada através da poda pessimista embutida no C5.0.
 
