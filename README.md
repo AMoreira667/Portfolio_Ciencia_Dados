@@ -431,6 +431,23 @@ tabela
 
 #### De acordo com os índices de Acurácia, Sensibilidade e Especificidade, podemos afirmar que o modelo apresenta um ótimo desempenho, além de estar devidamente balanceado.
 
+#### Análise de desempenho - KS
+
+#### A estatística de Kolmogorov-Smirnov (KS) reflete a máxima separação entre as curvas de frequências acumuladas de 2 grupos distintos de observações, no nosso caso, baseadas na variável resposta binária (Y). O valor do KS varia entre 0 (nenhuma separação) e 1 (separação completa).
+
+````
+# Obtendo o KS do modelo final
+ks <- max(attr(perf, 'y.values')[[1]] - attr(perf, 'x.values')[[1]])
+print(ks)
+````
+
+<div align="center">
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/8c696451-29d3-4a13-b4b0-269a6b1b68f3.png" width="600px" />
+</div>
+
+#### Análise:
+#### De acordo com o índice KS podemos afirmar que o modelo apresenta um desempenho muito bom.
+
 #### Análise de desempenho - AUC
 
 #### O valor da área abaixo da curva ROC, abreviado como AUC, é um indicador da qualidade de classificação do modelo, associado a diferentes pontos de corte possíveis. Nesse sentido, é uma medida mais abrangente que o KS, que considera o distanciamento entre sensibilidade e especificidade para um único ponto de corte.
@@ -453,16 +470,4 @@ print(auc)
 #### Análise:
 #### De acordo com o índice AUC (0,79) podemos afirmar que o modelo apresenta um bom desempenho.
 
-#### Análise de desempenho - KS
 
-#### A estatística de Kolmogorov-Smirnov (KS) reflete a máxima separação entre as curvas de frequências acumuladas de 2 grupos distintos de observações, no nosso caso, baseadas na variável resposta binária (Y). O valor do KS varia entre 0 (nenhuma separação) e 1 (separação completa).
-
-````
-# Obtendo o KS do modelo final
-ks <- max(attr(perf, 'y.values')[[1]] - attr(perf, 'x.values')[[1]])
-print(ks)
-````
-
-<div align="center">
-<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/75c713c1-460e-45d9-b225-08e4503c0d3a.png" width="600px" />
-</div>
