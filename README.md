@@ -472,10 +472,16 @@ print(auc)
 
 #### 4 - Modelagem (Modeling)
 
-#### Decision tree com algoritimo C5.0 (RStudio)
+# Modelagem com IA - Decision tree com algoritimo C5.0 (RStudio)
 
 #### O algoritmo C5.0 constrói a árvore de decisão através da divisão da amostra de treinamento com base no teste que resulta na maior razão de ganho. Cada subconjunto obtido da primeira divisão é novamente divido pela aplicação de um novo teste e este processo é repetido até que nenhuma outra divisão seja possível. Por fim, a simplificação da árvore com a poda dos nós que não contribuem para a tarefa de classificação é realizada através da poda pessimista embutida no C5.0.
 
 #### C5.0 pode produzir dois tipos de modelos. Uma árvore de decisão é uma descrição direta das divisões encontradas pelo algoritmo. Cada nó terminal (ou "folha") descreve um subconjunto específico dos dados de treinamento, e cada caso nos dados de treinamento pertence exatamente a um nó terminal na árvore. Em outras palavras, exatamente uma predição é possível para qualquer registro de dados específico apresentado para uma árvore de decisão.
 
 #### Os modelos C5.0 são bastante robustos na presença de problemas como dados omissos e grandes números de campos de entrada. Eles geralmente não requerem longos tempos de treinamento para estimar. Além disso, os modelos C5.0 tendem a ser mais fáceis de entender do que alguns outros tipos de modelo, já que as regras derivadas do modelo possuem uma interpretação muito clara. O C5.0 também oferece o método de reforço poderoso para aumentar a precisão da classificação.
+
+````
+# Usando sample para construir os dados de treino e de teste
+set.seed(123)
+train_sample <- sample(5000, 4000) # 80% para treino e 20% para teste
+````
