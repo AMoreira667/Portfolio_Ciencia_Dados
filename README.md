@@ -450,3 +450,19 @@ print(auc)
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/75c713c1-460e-45d9-b225-08e4503c0d3a.png" width="600px" />
 </div>
 
+#### Análise:
+#### De acordo com o índice AUC (0,79) podemos afirmar que o modelo apresenta um bom desempenho.
+
+#### Análise de desempenho - KS
+
+#### A estatística de Kolmogorov-Smirnov (KS) reflete a máxima separação entre as curvas de frequências acumuladas de 2 grupos distintos de observações, no nosso caso, baseadas na variável resposta binária (Y). O valor do KS varia entre 0 (nenhuma separação) e 1 (separação completa).
+
+````
+# Obtendo o KS do modelo final
+ks <- max(attr(perf, 'y.values')[[1]] - attr(perf, 'x.values')[[1]])
+print(ks)
+````
+
+<div align="center">
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/75c713c1-460e-45d9-b225-08e4503c0d3a.png" width="600px" />
+</div>
