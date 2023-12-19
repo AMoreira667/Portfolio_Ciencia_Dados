@@ -46,7 +46,7 @@
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/b5f92e35-6fff-4c41-8eeb-5eeaa4de2467.png" width="700px" />
 </div>
 
-#### Análise Exploratória de Dados (RStudio) 
+## Análise Exploratória de Dados (RStudio) 
 
 #### A análise exploratória de dados (AED) é o uso de ferramentas para examinar determinado conjunto de dados antes mesmo da aplicação de qualquer técnica estatística para tirar conclusões sobre eles. É uma maneira de obter um entendimento prévio sobre os dados disponíveis para um estudo e das variáveis que eles envolvem. <br>
 #### Depois que os dados são coletados e armazenados em um banco de dados, a análise descritiva é o primeiro passo dentro do AED. Nessa etapa, os pesquisadores se familiarizam e organizam esses dados de forma sintetizada para saber que tipo de informações podem ser tiradas deles.
@@ -287,13 +287,13 @@ ggpairs(emprestimo[,c(2:8)], title="Correlograma") # Correlograma - library(GGal
 #### Análise: 
 #### Analisando os dados correlograma, a variável Debito_Renda parece ter maior grau de explicabilidade (apesar do baixo nível de correlação -0,379) sobre a variável resposta. As demais variávies apresentam baixos níveis de correlação.
 
-#### 3 - Preparação dos Dados (Data Preparation)
+## 3 - Preparação dos Dados (Data Preparation)
 
 #### Como a base de dados já foi previamente tratada, vamos pular para a etapa de Modelagem.
 
-#### 4 - Modelagem (Modeling)
+## 4 - Modelagem (Modeling)
 
-#### Regressão logística (RStudio)
+### Regressão logística (RStudio)
 
 #### A modelagem estatística tradicional é uma abordagem que envolve o uso de métodos estatísticos clássicos para analisar dados e fazer inferências sobre populações ou processos subjacentes. Essa abordagem é frequentemente utilizada para entender as relações entre variáveis, realizar previsões e tomar decisões informadas com base em evidências quantitativas. 
 
