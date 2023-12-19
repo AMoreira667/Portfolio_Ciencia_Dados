@@ -267,8 +267,11 @@ ggpairs(emprestimo[,c(2:8)], title="Correlograma") # Correlograma - library(GGal
 #### Regressão Logística (RStudio)
 
 #### A modelagem estatística tradicional é uma abordagem que envolve o uso de métodos estatísticos clássicos para analisar dados e fazer inferências sobre populações ou processos subjacentes. Essa abordagem é frequentemente utilizada para entender as relações entre variáveis, realizar previsões e tomar decisões informadas com base em evidências quantitativas. 
+
 #### A regressão logística múltipla é uma técnica estatística utilizada para modelar a relação entre uma variável binária (ou dicotômica) dependente e várias variáveis independentes, que podem ser tanto numéricas quanto categóricas. Essa técnica é uma extensão da regressão logística simples, que lida com apenas uma variável independente.
+
 #### Na regressão logística múltipla, o objetivo é estimar os coeficientes das variáveis independentes de forma a entender como cada uma delas contribui para a probabilidade de um evento ocorrer. 
+
 #### A principal diferença em relação à regressão linear é que a regressão logística modela a relação entre as variáveis independentes e a log-odds da probabilidade do evento acontecer. A log-odds é a transformação logarítmica das probabilidades e é uma forma conveniente de trabalhar com problemas de classificação binária.
 
 ````
@@ -339,3 +342,6 @@ vif(regressao_log)
 <div align="center">
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/b2634bdc-4524-4746-aa95-7b5696da6244.png" width="700px" />
 </div>
+
+#### Análise: Interpretatando os dados se saída, não há evidencias claras de multicolinearidade no modelo, pois todos os valores foram menores que 4, podendo seguir com as próximas etapas.
+
