@@ -321,7 +321,7 @@ summary(regressao_log)
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/d97a8075-09c7-4e46-81b6-949d48a67efa.png" width="600px" />
 </div>
 
-#### Estatística VIF (Multicolinearidade)
+#### Estatística VIF - Verificando Multicolinearidade
 
 #### Quando lidamos com uma regressão múltipla, ou seja, com 2 ou mais variáveis explicativas, algumas delas podem representar informações muito similares. Esse tipo de redundância, no contexto de análise de regressão, é denominado multicolinearidade. 
 
@@ -331,3 +331,11 @@ summary(regressao_log)
 
 #### A estatística VIF (Variance Inflation Factor, ou Fator de Inflação da Variância) mensura o quanto a variância de cada coeficiente estimado do modelo está sendo inflacionada por conta de multicolinearidade. A partir de estudos anteriores, valores de VIF superiores a 4 já revelam sinais de multicolinearidade. 	
 
+````
+# Verificando multicolinearidade no modelo final - Variance Inflator Factor (Estatistica VIF)								
+vif(regressao_log)
+````
+
+<div align="center">
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/b2634bdc-4524-4746-aa95-7b5696da6244.png" width="600px" />
+</div>
