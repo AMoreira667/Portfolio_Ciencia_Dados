@@ -162,7 +162,8 @@ hist(emprestimo$Idade, main = "Histograma Idade", col = "darkturquoise", ylab = 
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/2931ea1b-94de-4b38-89af-8cc26b9a792f.png" width="600px" />
 </div>
 
-#### Análise: Analisando os dados do boxplot da variável Idade, pode-se observar poucos valores discrepantes (outliers), onde os dados indicam que, para uma base de 5.000 clientes 25% tem menos de 37 anos e idade média de 48 anos. Já analisando os dados do histograma, pode-se observar que a distribuição tende à “normal”, onde 65,56% dos clientes tem idades entre 28 e 55 anos aproximadamente, que são representas pelas maiores porções do gráfico.
+#### Análise: 
+#### Analisando os dados do boxplot da variável Idade, pode-se observar poucos valores discrepantes (outliers), onde os dados indicam que, para uma base de 5.000 clientes 25% tem menos de 37 anos e idade média de 48 anos. Já analisando os dados do histograma, pode-se observar que a distribuição tende à “normal”, onde 65,56% dos clientes tem idades entre 28 e 55 anos aproximadamente, que são representas pelas maiores porções do gráfico.
 
 #### Boxplot e histograma - Tempo_Experiencia
 
@@ -176,7 +177,8 @@ hist(emprestimo$Tempo_Experiencia, main = "Histograma Tempo_Experiencia", col = 
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/a4e1ab92-52d0-496d-9418-588fa840a42d.png" width="600px" />
 </div>
 
-#### Análise: Analisando os dados do boxplot da variável Tempo_Experiencia, pode-se observar a ausência valores descrepantes (outliers), onde os dados indicam que, para uma base de 5.000 clientes 75% tem menos de 22 de experiência e média de 14 anos. Já analisando os dados do histograma, pode-se observar que a distribuição é assimétrica à direita, onde 54,94% dos clientes tem tempo de experiência entre 0 e 13 anos aproximadamente, que são representas pelas maiores porções do gráfico.
+#### Análise: 
+#### Analisando os dados do boxplot da variável Tempo_Experiencia, pode-se observar a ausência valores descrepantes (outliers), onde os dados indicam que, para uma base de 5.000 clientes 75% tem menos de 22 de experiência e média de 14 anos. Já analisando os dados do histograma, pode-se observar que a distribuição é assimétrica à direita, onde 54,94% dos clientes tem tempo de experiência entre 0 e 13 anos aproximadamente, que são representas pelas maiores porções do gráfico.
 
 #### Boxplot e histograma - Tempo_Experiencia
 
@@ -190,7 +192,8 @@ hist(emprestimo$Tempo_Endereco, main = "Histograma Tempo_Endereco", col = "green
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/2b0654ef-6481-4f64-8442-ec106bbd5ca6.png" width="600px" />
 </div>
 
-#### Análise: Analisando os dados do boxplot da variável Tempo_Endereco, pode-se observar poucos valores outliers (2,56%), onde os dados indicam que, para uma base de 5.000 clientes 25% tem menos de 3 de tempo endereço e média de 8,2 anos. Já analisando os dados do histograma, pode-se observar que a distribuição é assimétrica à direita, onde 67,76% dos clientes tem tempo de residência entre 0 e 10,2 anos aproximadamente, que são capturadas pelas maiores porções do gráfico.
+#### Análise: 
+#### Analisando os dados do boxplot da variável Tempo_Endereco, pode-se observar poucos valores outliers (2,56%), onde os dados indicam que, para uma base de 5.000 clientes 25% tem menos de 3 de tempo endereço e média de 8,2 anos. Já analisando os dados do histograma, pode-se observar que a distribuição é assimétrica à direita, onde 67,76% dos clientes tem tempo de residência entre 0 e 10,2 anos aproximadamente, que são capturadas pelas maiores porções do gráfico.
 
 #### Boxplot e histograma - Renda
 
@@ -204,7 +207,8 @@ hist(emprestimo$Renda, main = "Histograma Renda", col = "darkblue", ylab = "Freq
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/b4c5abae-c925-467e-a21e-7948430d68a0.png" width="600px" />
 </div>
 
-#### Análise: Analisando os dados do boxplot da variável Renda, pode-se observar poucos valores outliers (0,42%), onde os dados indicam que, para uma base de 5.000 clientes 75% ganham menos de 4,6 salários mínimos e média de 3,9. Já analisando os dados do histograma, pode-se observar que a distribuição é assimétrica à direita, onde 60,5% dos clientes tem rendas entre 1,8 e 4,6 salários aproximadamente, que é capturada pela maior porção do gráfico.
+#### Análise: 
+#### Analisando os dados do boxplot da variável Renda, pode-se observar poucos valores outliers (0,42%), onde os dados indicam que, para uma base de 5.000 clientes 75% ganham menos de 4,6 salários mínimos e média de 3,9. Já analisando os dados do histograma, pode-se observar que a distribuição é assimétrica à direita, onde 60,5% dos clientes tem rendas entre 1,8 e 4,6 salários aproximadamente, que é capturada pela maior porção do gráfico.
 #### Extra: De acordo com a base de dados, apenas 0,42% da população tem renda entre 21,3 e 38 salários mínimos, que representa (ou tende a representar) a desigualdade de renda existente no País.
 
 #### Boxplot e histograma - Debito_Renda
@@ -219,7 +223,8 @@ hist(emprestimo$Debito_Renda, main = "Histograma Debito_Renda", col = "yellow", 
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/b345178a-38a8-45ed-b721-1baaac77580b.png" width="600px" />
 </div>
 
-#### Análise: Analisando os dados do boxplot da variável Debito_Renda, pode-se observar poucos valores outliers (0,6%), onde os dados indicam que, para uma base de 5.000 clientes 25% tem débitos de 5 salários em relação a renda atual e média de 10. Já analisando os dados do histograma, pode-se observar que a distribuição é assimétrica à direita, onde 52,8% dos clientes tem débitos em relação a renda entre 0,08 e 12,9 aproximadamente, que são capturadas pelas maiores porções do gráfico.
+#### Análise: 
+#### Analisando os dados do boxplot da variável Debito_Renda, pode-se observar poucos valores outliers (0,6%), onde os dados indicam que, para uma base de 5.000 clientes 25% tem débitos de 5 salários em relação a renda atual e média de 10. Já analisando os dados do histograma, pode-se observar que a distribuição é assimétrica à direita, onde 52,8% dos clientes tem débitos em relação a renda entre 0,08 e 12,9 aproximadamente, que são capturadas pelas maiores porções do gráfico.
 
 #### Boxplot e histograma - Variacao_Debito
 
@@ -233,7 +238,8 @@ hist(emprestimo$Variacao_Debito, main = "Histograma Variacao_Debito", col = "dar
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/2e0896e1-3270-491c-ae63-9b702388453e.png" width="600px" />
 </div>
 
-#### Análise: Analisando os dados do boxplot da variável Variacao_Debito, pode-se observar valores outliers (11,9%), onde os dados indicam que, para uma base de 5.000 clientes 75% tem variações de 0,17 em relação a 6 meses atrás e média de -0,43. Já analisando os dados do histograma, pode-se observar que a distribuição é assimétrica à direita, onde 88,1% dos clientes tem variações de debito em relação a 6 meses atrás entre -1 e 1,57 aproximadamente, que são capturadas pelas maiores porções do gráfico.
+#### Análise: 
+#### Analisando os dados do boxplot da variável Variacao_Debito, pode-se observar valores outliers (11,9%), onde os dados indicam que, para uma base de 5.000 clientes 75% tem variações de 0,17 em relação a 6 meses atrás e média de -0,43. Já analisando os dados do histograma, pode-se observar que a distribuição é assimétrica à direita, onde 88,1% dos clientes tem variações de debito em relação a 6 meses atrás entre -1 e 1,57 aproximadamente, que são capturadas pelas maiores porções do gráfico.
 
 #### Analise exploratoria dos dados - Bivariada
 
@@ -251,7 +257,8 @@ boxplot(Variacao_Debito ~ Classif, data = emprestimo, col = "darkgrey", main = "
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/dbe4180b-814f-4f71-9df7-33454f1c60ff.png" width="600px" />
 </div>
 
-#### Análise: Analisando os dados do boxplot da variável explicativa Debtio_Renda x variável resposta Classif, pode-se observar uma relação entre essas variáveis devido a disparidade entre os “0” e “1”.
+#### Análise: 
+#### Analisando os dados do boxplot da variável explicativa Debtio_Renda x variável resposta Classif, pode-se observar uma relação entre essas variáveis devido a disparidade entre os “0” e “1”.
 
 #### Analise exploratoria dos dados - Bivariada com Information Value (IV)
 
@@ -265,7 +272,8 @@ IV$Summary
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/955b1939-2fc1-4336-a5ae-f2c6d838b85e.png" width="600px" />
 </div>
 
-#### Análise: Analisando os dados, a variável Debito_Renda parece ter maior grau de explicabilidade sobre a variável resposta.
+#### Análise: 
+#### Analisando os dados, a variável Debito_Renda parece ter maior grau de explicabilidade sobre a variável resposta.
 
 #### Analise exploratoria dos dados - Bivariada com Correlograma
 ````
@@ -276,7 +284,8 @@ ggpairs(emprestimo[,c(2:8)], title="Correlograma") # Correlograma - library(GGal
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/6d8d9b69-51f9-46f6-84d1-ec36c2108f14.png" width="600px" />
 </div>
 
-#### Análise: Analisando os dados correlograma, a variável Debito_Renda parece ter maior grau de explicabilidade (apesar do baixo nível de correlação -0,379) sobre a variável resposta. As demais variávies apresentam baixos níveis de correlação.
+#### Análise: 
+#### Analisando os dados correlograma, a variável Debito_Renda parece ter maior grau de explicabilidade (apesar do baixo nível de correlação -0,379) sobre a variável resposta. As demais variávies apresentam baixos níveis de correlação.
 
 #### 3 - Preparação dos Dados (Data Preparation)
 
@@ -375,7 +384,8 @@ vif(regressao_log)
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/b2634bdc-4524-4746-aa95-7b5696da6244.png" width="700px" />
 </div>
 
-#### Análise: Interpretatando os dados se saída, não há evidencias claras de multicolinearidade no modelo, pois todos os valores foram menores que 4, podendo seguir com as próximas etapas.
+#### Análise: 
+#### Interpretatando os dados se saída, não há evidencias claras de multicolinearidade no modelo, pois todos os valores foram menores que 4, podendo seguir com as próximas etapas.
 
 #### 5 - Avaliação (Evaluation) - Regressão logística
 
@@ -416,7 +426,8 @@ tabela
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/e9a9c22d-45fb-4cdf-a256-3bdb833e8342.png" width="600px" />
 </div>
 
-#### Análise: A Acurácia de 71,6% significa que, em geral, a cada 100 clientes, o modelo identifica corretamente se haverá ou não inadimplência para 72 deles. Já a Sensibilidade indica que cerca de 72% dos clientes que pagam suas dívidas em dias são corretamente classificados pelo modelo. A Especificidade indica que 72% dos clientes que não pagam suas dívidas em dia são corretamente classificados pelo modelo. 
+#### Análise: 
+#### A Acurácia de 71,6% significa que, em geral, a cada 100 clientes, o modelo identifica corretamente se haverá ou não inadimplência para 72 deles. Já a Sensibilidade indica que cerca de 72% dos clientes que pagam suas dívidas em dias são corretamente classificados pelo modelo. A Especificidade indica que 72% dos clientes que não pagam suas dívidas em dia são corretamente classificados pelo modelo. 
 
 #### De acordo com os índices de Acurácia, Sensibilidade e Especificidade, podemos afirmar que o modelo apresenta um ótimo desempenho, além de estar devidamente balanceado.
 
