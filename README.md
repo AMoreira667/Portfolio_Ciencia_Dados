@@ -388,7 +388,10 @@ vif(regressao_log)
 ````
 # Ponto de corte otimo que minimiza a diferenca entre sensibilidade e especificidade								
 ponto_corte_sen_esp <- cutpointr(emprestimo, Probabilidade, Classif,  method = minimize_metric, metric = abs_d_sens_spec,							
-                         pos_class = 1, direction = ">=")								
+                                 pos_class = 1, direction = ">=")								
 summary(ponto_corte_sen_esp) 	
 ````
 
+<div align="center">
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/6dd9aaf3-4fb6-4a8d-aa76-490f966fd3d9.png" width="700px" />
+</div>
