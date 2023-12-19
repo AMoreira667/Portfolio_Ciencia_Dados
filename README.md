@@ -395,3 +395,23 @@ summary(ponto_corte_sen_esp)
 <div align="center">
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/6dd9aaf3-4fb6-4a8d-aa76-490f966fd3d9.png" width="700px" />
 </div>
+
+````
+# Obtendo a probabilidade estimada de ser um bom pagador para cada cliente 					
+emprestimo$Predito <- as.factor(ifelse(emprestimo$Probabilidade >= 0.7535, 1, 0))
+````
+
+#### Matriz de contigencia para classificação
+
+````
+# Obtendo tabela com medidas de desempenho
+tabela <- table(emprestimo$Classif, emprestimo$Predito)				
+(acuracia       <- (tabela[1,1] + tabela[2,2]) / sum(tabela))				
+(especificidade <- tabela[1,1] / (tabela[1,1] + tabela[1,2]))				
+(sensibilidade  <- tabela[2,2] / (tabela[2,1] + tabela[2,2]))				
+tabela
+````
+
+<div align="center">
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/e9a9c22d-45fb-4cdf-a256-3bdb833e8342.png" width="600px" />
+</div>
