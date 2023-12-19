@@ -36,11 +36,11 @@
 
 ## 2 - Compreensão dos Dados (Data Understanding)
 
-#### Base de Dados
+### Base de Dados
 
 #### Considerando dados históricos provenientes de um banco, referentes a 5.000 clientes que solicitaram empréstimos financeiros. A base contém informações como idade, tempo de residência no endereço atual, renda etc., além da variável resposta Classif, que indica se cada clientes foi um bom pagador (1) ou um mau pagador (0). Deseja-se avaliar o potencial dessas variáveis para predizer se novos clientes serão bons ou maus pagadores. 
 
-#### Dicionário de Dados
+### Dicionário de Dados
 
 <div align="center">
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/b5f92e35-6fff-4c41-8eeb-5eeaa4de2467.png" width="700px" />
@@ -66,15 +66,15 @@
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/03489886-6784-4813-b73d-1422257f51b8.png" width="350px" />
 </div>
 
-#### Análise Exploratória de Dados (RStudio) - Pacotes e Biblioteca
+### Análise Exploratória de Dados (RStudio) - Pacotes e Biblioteca
 
-#### Mapear diretorio onde esta salvo a base de dados
+### Mapear diretorio onde esta salvo a base de dados
 
 ````
 setwd("inserir directorio do arquivo"") # Ou Ctrl + Shift + H
 ````
 
-#### Pacotes necessários
+### Pacotes necessários
 
 ````
 install.packages("readxl")            # Para leitura de dados Excel
@@ -89,7 +89,7 @@ install.packages("gmodels")           # Matriz de contigencia
 installed.packages()                  # Para verificar bibliotecas instaladas
 install.packages("GGally")            # Correlograma
 ````
-#### Bibliotecas necessárias
+### Bibliotecas necessárias
 
 ````
 library(readxl)				
@@ -103,21 +103,21 @@ library(C50)
 library(gmodels)
 library(GGally)
 ````
-#### Retirar a notacao cientifica
+### Retirar a notacao cientifica
 
 ````
 options(scipen = 999) 				
 ````
 
-#### Leitura da base de dados
+### Leitura da base de dados
 
 ````
 emprestimo <- read_excel("Regressao logistica.xlsx", sheet = "Emprestimo - Dados")							
 ````
 
-#### Analise exploratoria dos dados - Univariada
+### Analise exploratoria dos dados - Univariada
 
-#### Cabecalho
+### Cabecalho
 
 ````
 head(emprestimo, 15) # Cabecalho contento as 15 primeiras linhas do dataframe
@@ -135,7 +135,7 @@ tail(emprestimo, 15) # Calda contento as 15 ultimas linhas do dataframe
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/d42a2af9-f020-4871-b9a0-2b0c3832ca37.png" width="700px" />
 </div>
 
-#### Medidas resumo
+### Medidas resumo
 
 ````
 summary(emprestimo[,-1]) # Medidas de posicao 
@@ -151,7 +151,7 @@ describe(emprestimo[,-1]) # Medidas de dispersao
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/a1a6cdc2-37e5-4f55-b81e-3a476583eae7.png" width="700px" />
 </div>
 
-#### Boxplot e histograma - Idade
+### Boxplot e histograma - Idade
 
 ````
 par(mfrow = c(1,2)) # Inserir 2 graficos na mesma tela
@@ -165,7 +165,7 @@ hist(emprestimo$Idade, main = "Histograma Idade", col = "darkturquoise", ylab = 
 #### Análise: 
 #### Analisando os dados do boxplot da variável Idade, pode-se observar poucos valores discrepantes (outliers), onde os dados indicam que, para uma base de 5.000 clientes 25% tem menos de 37 anos e idade média de 48 anos. Já analisando os dados do histograma, pode-se observar que a distribuição tende à “normal”, onde 65,56% dos clientes tem idades entre 28 e 55 anos aproximadamente, que são representas pelas maiores porções do gráfico.
 
-#### Boxplot e histograma - Tempo_Experiencia
+### Boxplot e histograma - Tempo_Experiencia
 
 ````
 par(mfrow = c(1,2))	# Inserir 2 graficos na mesma tela
@@ -180,7 +180,7 @@ hist(emprestimo$Tempo_Experiencia, main = "Histograma Tempo_Experiencia", col = 
 #### Análise: 
 #### Analisando os dados do boxplot da variável Tempo_Experiencia, pode-se observar a ausência valores descrepantes (outliers), onde os dados indicam que, para uma base de 5.000 clientes 75% tem menos de 22 de experiência e média de 14 anos. Já analisando os dados do histograma, pode-se observar que a distribuição é assimétrica à direita, onde 54,94% dos clientes tem tempo de experiência entre 0 e 13 anos aproximadamente, que são representas pelas maiores porções do gráfico.
 
-#### Boxplot e histograma - Tempo_Experiencia
+### Boxplot e histograma - Tempo_Experiencia
 
 ````
 par(mfrow = c(1,2))	
@@ -195,7 +195,7 @@ hist(emprestimo$Tempo_Endereco, main = "Histograma Tempo_Endereco", col = "green
 #### Análise: 
 #### Analisando os dados do boxplot da variável Tempo_Endereco, pode-se observar poucos valores outliers (2,56%), onde os dados indicam que, para uma base de 5.000 clientes 25% tem menos de 3 de tempo endereço e média de 8,2 anos. Já analisando os dados do histograma, pode-se observar que a distribuição é assimétrica à direita, onde 67,76% dos clientes tem tempo de residência entre 0 e 10,2 anos aproximadamente, que são capturadas pelas maiores porções do gráfico.
 
-#### Boxplot e histograma - Renda
+### Boxplot e histograma - Renda
 
 ````
 par(mfrow = c(1,2)) # Inserir 2 graficos na mesma tela
@@ -211,7 +211,7 @@ hist(emprestimo$Renda, main = "Histograma Renda", col = "darkblue", ylab = "Freq
 #### Analisando os dados do boxplot da variável Renda, pode-se observar poucos valores outliers (0,42%), onde os dados indicam que, para uma base de 5.000 clientes 75% ganham menos de 4,6 salários mínimos e média de 3,9. Já analisando os dados do histograma, pode-se observar que a distribuição é assimétrica à direita, onde 60,5% dos clientes tem rendas entre 1,8 e 4,6 salários aproximadamente, que é capturada pela maior porção do gráfico.
 #### Extra: De acordo com a base de dados, apenas 0,42% da população tem renda entre 21,3 e 38 salários mínimos, que representa (ou tende a representar) a desigualdade de renda existente no País.
 
-#### Boxplot e histograma - Debito_Renda
+### Boxplot e histograma - Debito_Renda
 
 ````
 par(mfrow = c(1,2)) # Inserir 2 graficos na mesma tela
@@ -226,7 +226,7 @@ hist(emprestimo$Debito_Renda, main = "Histograma Debito_Renda", col = "yellow", 
 #### Análise: 
 #### Analisando os dados do boxplot da variável Debito_Renda, pode-se observar poucos valores outliers (0,6%), onde os dados indicam que, para uma base de 5.000 clientes 25% tem débitos de 5 salários em relação a renda atual e média de 10. Já analisando os dados do histograma, pode-se observar que a distribuição é assimétrica à direita, onde 52,8% dos clientes tem débitos em relação a renda entre 0,08 e 12,9 aproximadamente, que são capturadas pelas maiores porções do gráfico.
 
-#### Boxplot e histograma - Variacao_Debito
+### Boxplot e histograma - Variacao_Debito
 
 ````
 par(mfrow = c(1,2)) # Inserir 2 graficos na mesma tela
@@ -241,7 +241,7 @@ hist(emprestimo$Variacao_Debito, main = "Histograma Variacao_Debito", col = "dar
 #### Análise: 
 #### Analisando os dados do boxplot da variável Variacao_Debito, pode-se observar valores outliers (11,9%), onde os dados indicam que, para uma base de 5.000 clientes 75% tem variações de 0,17 em relação a 6 meses atrás e média de -0,43. Já analisando os dados do histograma, pode-se observar que a distribuição é assimétrica à direita, onde 88,1% dos clientes tem variações de debito em relação a 6 meses atrás entre -1 e 1,57 aproximadamente, que são capturadas pelas maiores porções do gráfico.
 
-#### Analise exploratoria dos dados - Bivariada
+### Analise exploratoria dos dados - Bivariada
 
 ````
 par(mfrow = c(2, 3)) # Inserir 2 graficos na mesma tela	
@@ -260,7 +260,7 @@ boxplot(Variacao_Debito ~ Classif, data = emprestimo, col = "darkgrey", main = "
 #### Análise: 
 #### Analisando os dados do boxplot da variável explicativa Debtio_Renda x variável resposta Classif, pode-se observar uma relação entre essas variáveis devido a disparidade entre os “0” e “1”.
 
-#### Analise exploratoria dos dados - Bivariada com Information Value (IV)
+### Analise exploratoria dos dados - Bivariada com Information Value (IV)
 
 #### O Valor da Informação, ou Information Value (IV), é um indicador que mensura a força da relação entre duas variáveis, sejam elas numéricas ou categóricas. No contexto da regressão logística, o IV é calculado entre as variáveis explicativas versus a variável resposta (binária) na fase de análise bivariada, sendo útil para realizar uma avaliação prévia de quais variáveis explicativas têm maior potencial de discriminação para a posterior construção de um modelo. Quanto maior o valor do IV, maior o grau de explicabilidade da variável explicativa sobre a resposta. Em grande parte das situações práticas, seu valor varia entre 0 a 0,5, ainda que possa assumir quaisquer valores positivos. 
 
@@ -275,7 +275,7 @@ IV$Summary
 #### Análise: 
 #### Analisando os dados, a variável Debito_Renda parece ter maior grau de explicabilidade sobre a variável resposta.
 
-#### Analise exploratoria dos dados - Bivariada com Correlograma
+### Analise exploratoria dos dados - Bivariada com Correlograma
 ````
 # Analise exploratoria dos dados - Correlograma
 ggpairs(emprestimo[,c(2:8)], title="Correlograma") # Correlograma - library(GGally) 				
@@ -340,7 +340,7 @@ summary(regressao_log)
 
 #### Analisando os p-valores obtidos pelo modelo, consegue-se estatisticamente sustentar são as variáveis Debito_Renda, Tempo_Endereco, Variacao_Debito e Renda são variáveis significativas, adotando um nível de confiança de 95%. Logo, são aspectos estatisticamente significativos para explicar a decisão de conceder empréstimo, e devem ser mantidos no modelo.
 
-#### Cálculo das estimativas
+### Cálculo das estimativas
 
 #### Tendo em vista que todas as variáveis são importantes, pode-se calcular a probabilidade final de uma pessoa ser inadimplente de forma consistente da seguinte forma:
 
@@ -354,7 +354,7 @@ summary(regressao_log)
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/d97a8075-09c7-4e46-81b6-949d48a67efa.png" width="600px" />
 </div>
 
-#### Obtendo as probabilidades estimadas para cada cliente
+### Obtendo as probabilidades estimadas para cada cliente
 
 ````
 # Obtendo a probabilidade estimada de para cada cliente					
@@ -365,7 +365,7 @@ emprestimo$Probabilidade <- predict(regressao_log, emprestimo, type = "response"
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/c8011556-a8de-4799-9ed8-6feecbd75240.png" width="600px" />
 </div>
 
-#### Estatística VIF - Verificando Multicolinearidade
+### Estatística VIF - Verificando Multicolinearidade
 
 #### Quando lidamos com uma regressão múltipla, ou seja, com 2 ou mais variáveis explicativas, algumas delas podem representar informações muito similares. Esse tipo de redundância, no contexto de análise de regressão, é denominado multicolinearidade. 
 
@@ -387,9 +387,9 @@ vif(regressao_log)
 #### Análise: 
 #### Interpretatando os dados se saída, não há evidencias claras de multicolinearidade no modelo, pois todos os valores foram menores que 4, podendo seguir com as próximas etapas.
 
-#### 5 - Avaliação (Evaluation) - Regressão logística
+## 5 - Avaliação (Evaluation) - Regressão logística
 
-#### Ponto de corte
+### Ponto de corte
 
 #### Após a obtenção da probabilidade, é importante obter a tabela de classificação.
 
@@ -411,7 +411,7 @@ summary(ponto_corte_sen_esp)
 emprestimo$Predito <- as.factor(ifelse(emprestimo$Probabilidade >= 0.7535, 1, 0))
 ````
 
-#### Análise de desempenho - Matriz de contigencia para classificação
+### Análise de desempenho - Matriz de contigencia para classificação
 
 ````
 # Obtendo tabela com medidas de desempenho
@@ -431,7 +431,7 @@ tabela
 
 #### De acordo com os índices de Acurácia, Sensibilidade e Especificidade, podemos afirmar que o modelo apresenta um ótimo desempenho, além de estar devidamente balanceado.
 
-#### Análise de desempenho - KS
+### Análise de desempenho - KS
 
 #### A estatística de Kolmogorov-Smirnov (KS) reflete a máxima separação entre as curvas de frequências acumuladas de 2 grupos distintos de observações, no nosso caso, baseadas na variável resposta binária (Y). O valor do KS varia entre 0 (nenhuma separação) e 1 (separação completa).
 
@@ -448,7 +448,7 @@ print(ks)
 #### Análise:
 #### De acordo com o índice KS podemos afirmar que o modelo apresenta um desempenho muito bom.
 
-#### Análise de desempenho - AUC
+### Análise de desempenho - AUC
 
 #### O valor da área abaixo da curva ROC, abreviado como AUC, é um indicador da qualidade de classificação do modelo, associado a diferentes pontos de corte possíveis. Nesse sentido, é uma medida mais abrangente que o KS, que considera o distanciamento entre sensibilidade e especificidade para um único ponto de corte.
 
@@ -472,7 +472,7 @@ print(auc)
 
 ## 4 - Modelagem (Modeling)
 
-#### Modelagem com IA - Decision tree com algoritimo C5.0 (RStudio)
+### Modelagem com IA - Decision tree com algoritimo C5.0 (RStudio)
 
 #### O algoritmo C5.0 constrói a árvore de decisão através da divisão da amostra de treinamento com base no teste que resulta na maior razão de ganho. Cada subconjunto obtido da primeira divisão é novamente divido pela aplicação de um novo teste e este processo é repetido até que nenhuma outra divisão seja possível. Por fim, a simplificação da árvore com a poda dos nós que não contribuem para a tarefa de classificação é realizada através da poda pessimista embutida no C5.0.
 
