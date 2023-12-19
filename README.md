@@ -117,7 +117,7 @@ emprestimo <- read_excel("Regressao logistica.xlsx", sheet = "Emprestimo - Dados
 
 ### Analise exploratoria dos dados - Univariada
 
-### Cabecalho
+### Cabeçalho
 
 ````
 head(emprestimo, 15) # Cabecalho contento as 15 primeiras linhas do dataframe
