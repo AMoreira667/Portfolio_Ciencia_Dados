@@ -50,11 +50,16 @@
 
 #### A análise exploratória de dados (AED) é o uso de ferramentas para examinar determinado conjunto de dados antes mesmo da aplicação de qualquer técnica estatística para tirar conclusões sobre eles. É uma maneira de obter um entendimento prévio sobre os dados disponíveis para um estudo e das variáveis que eles envolvem. <br>
 #### Depois que os dados são coletados e armazenados em um banco de dados, a análise descritiva é o primeiro passo dentro do AED. Nessa etapa, os pesquisadores se familiarizam e organizam esses dados de forma sintetizada para saber que tipo de informações podem ser tiradas deles.
-#### Dito de outra forma, antes de realizar uma análise exploratória de dados, temos que preparar esses dados para que se tornem analisáveis. Há um conjunto de tarefas envolvido nesse processo.
-#### Identificar quais são as variáveis envolvidas e como elas se relacionam;
-#### Identificar os chamados outliers, casos de exceção que não seguem uma tendência muito diferente da maior parte da amostra analisada;
-#### Verificar se há dados ausentes;
-#### Fazer algumas suposições preliminares sobre as tendências que esses dados demonstram, como normalidade e linearidade.
+#### Dito de outra forma, antes de realizar uma análise exploratória de dados, temos que preparar esses dados para que se tornem analisáveis. Há um conjunto de tarefas envolvido nesse processo:
+
+#### ✓ Identificar quais são as variáveis envolvidas e como elas se relacionam;
+
+#### ✓ Identificar os chamados outliers, casos de exceção que não seguem uma tendência muito diferente da maior parte da amostra analisada;
+
+#### ✓ Verificar se há dados ausentes;
+
+#### ✓ Fazer algumas suposições preliminares sobre as tendências que esses dados demonstram, como normalidade e linearidade.
+
 #### Esse é o processo que acontece nos bastidores de um sistema voltado para Business Intelligence (BI), que é a análise de dados críticos para ajudar os gestores de uma empresa a tomarem as melhores decisões. 
 
 <div align="center">
