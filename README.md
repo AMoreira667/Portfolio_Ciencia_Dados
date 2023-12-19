@@ -415,3 +415,8 @@ tabela
 <div align="center">
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/e9a9c22d-45fb-4cdf-a256-3bdb833e8342.png" width="600px" />
 </div>
+
+#### Análise: A Acurácia de 71,6% significa que, em geral, a cada 100 clientes, o modelo identifica corretamente se haverá ou não inadimplência para 72 deles. Já a Sensibilidade indica que cerca de 72% dos clientes que pagam suas dívidas em dias são corretamente classificados pelo modelo. A Especificidade indica que 72% dos clientes que não pagam suas dívidas em dia são corretamente classificados pelo modelo. 
+
+#### De acordo com os índices de Acurácia, Sensibilidade e Especificidade, podemos afirmar que o modelo apresenta um ótimo desempenho, além de estar devidamente balanceado.
+
