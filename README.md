@@ -377,6 +377,8 @@ vif(regressao_log)
 
 #### Análise: Interpretatando os dados se saída, não há evidencias claras de multicolinearidade no modelo, pois todos os valores foram menores que 4, podendo seguir com as próximas etapas.
 
+#### 5 - Avaliação (Evaluation) - Regressão logística
+
 #### Ponto de corte
 
 #### Após a obtenção da probabilidade, é importante obter a tabela de classificação.
@@ -384,5 +386,9 @@ vif(regressao_log)
 #### Para classificar cada cliente como um potencial inadimplente variável (Y = 1) ou como adimplente (Y = 0) utilizando o modelo, deve-se adotar um valor de probabilidade predita como sendo o ponto de corte. Pode-se considerar como referência o valor da proporção geral de observações com Y = 1, ou seja, de indivíduos que deixaram de realizar o pagamento de suas contas em dia. Ou seja, os indivíduos que tiverem probabilidade predita acima desta referência serão considerados como propensos a se tornarem inadimplentes. O time de negócios tem interesse que modelo classifique tanto os clientes que tem maiores probabilidades de serem inadimplentes como os de serem adimplentes. Desta forma o cientista de dados definiu uma métrica que maximizasse tanto os acertos quanto os erros, chegando à seguinte tabela de classificação:
 
 ````
-
+# Ponto de corte otimo que minimiza a diferenca entre sensibilidade e especificidade								
+ponto_corte_sen_esp <- cutpointr(emprestimo, Probabilidade, Classif,  method = minimize_metric, metric = abs_d_sens_spec,							
+                         pos_class = 1, direction = ">=")								
+summary(ponto_corte_sen_esp) 	
+````
 
