@@ -504,5 +504,5 @@ prop.table(table(emprestimo_test$Classif))
 ````
 
 <div align="center">
-<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/d428cf4f-ae9b-44ff-8d59-2218c85b3a98.png" width="600px" />
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/d428cf4f-ae9b-44ff-8d59-2218c85b3a98.png" width="500px" />
 </div>
