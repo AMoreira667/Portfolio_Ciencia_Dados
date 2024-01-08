@@ -485,9 +485,12 @@ print(auc)
 set.seed(123)
 train_sample <- sample(5000, 4000) # 80% para treino e 20% para teste
 ````
+#### Dividindo a amostra para receber dados de treino e teste.
+#### Obs:  Não exite um consenso sobre a proporção da divisão entre dados de treimo e teste, algumas literaturas reconendam 80/20, 70/30 etc. Essa decisão fica a critério do Cientista de Dados de acordo com cada projeto.
 
 ````
 # Divisao dos dataframes
 emprestimo_train <- emprestimo[train_sample, ]
 emprestimo_test  <- emprestimo[-train_sample, ]
 ````
+#### Nesse etapa estamos seguimentando o dataframe em "emprestimo_train" para treino (80%) e em "emprestimo_test" para teste (20%).
