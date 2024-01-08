@@ -506,3 +506,11 @@ prop.table(table(emprestimo_test$Classif))
 <div align="center">
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/d428cf4f-ae9b-44ff-8d59-2218c85b3a98.png" width="500px" />
 </div>
+
+````
+# Transformando a variavel resposta "Classif" para factor
+emprestimo_train$Classif <- as.factor(emprestimo_train$Classif)
+str(emprestimo_train$Classif) # Verificar as classes das variavies
+````
+
+#### Obs: A transformação de uma variável em fator é uma prática importante para garantir que você esteja tratando corretamente variáveis categóricas e aproveitando ao máximo as funcionalidades estatísticas. Em certos casos, se uma variável categórica não for tratada como fator, os algoritmos podem interpretá-la como uma variável numérica, o que pode levar a interpretações equivocadas dos dados.
