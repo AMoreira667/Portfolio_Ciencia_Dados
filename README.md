@@ -485,3 +485,9 @@ print(auc)
 set.seed(123)
 train_sample <- sample(5000, 4000) # 80% para treino e 20% para teste
 ````
+
+````
+# Divisao dos dataframes
+emprestimo_train <- emprestimo[train_sample, ]
+emprestimo_test  <- emprestimo[-train_sample, ]
+````
