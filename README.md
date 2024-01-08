@@ -487,7 +487,7 @@ train_sample <- sample(5000, 4000) # 80% para treino e 20% para teste
 ````
 
 #### Dividindo a amostra para receber dados de treino e teste.
-#### Obs:  Não exite um consenso sobre a proporção da divisão entre dados de treimo e teste, algumas literaturas reconendam 80/20, 70/30 etc. Essa decisão fica a critério do Cientista de Dados de acordo com cada projeto.
+#### Obs:  Não exite um consenso sobre a proporção da divisão entre dados de treino e teste, algumas literaturas reconendam 80/20, 70/30 etc. Essa decisão fica a critério do Cientista de Dados de acordo com cada projeto.
 
 ````
 # Divisao dos dataframes
