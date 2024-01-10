@@ -541,3 +541,13 @@ class(emprestimo_train$Classif) # Verificar a classe da variável
 <div align="center">
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/fe29409b-90bb-4ded-b3e4-d9cccac2bc15.png" width="500px" />
 </div>
+
+#### Criando e visualizando o modelo
+
+````
+# Criando e visualizando o modelo
+emprestimo_model <- C5.0(emprestimo_train[2:7], emprestimo_train$Classif)
+print(emprestimo_model)
+summary(emprestimo_model)
+````
+
