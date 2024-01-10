@@ -34,7 +34,7 @@
 
 <ul>
   <li> Quais são as características demográficas dos bons pagadores em comparação com os maus pagadores? 
-       Explorar variáveis como idade, renda, tempo de residência, entre outras <li>
+       Explorar variáveis como idade, renda, tempo de residência, entre outras 
   <li> Existe alguma correlação entre a idade dos clientes e sua classificação como bons ou maus pagadores? </li>
   <li> A estabilidade no tempo de residência tem alguma influência na capacidade de pagamento? </li>
  
