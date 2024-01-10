@@ -34,6 +34,14 @@
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/eddb0d7d-28df-4acf-93fd-c3280934083b.png" width="700px" />
 </div>
 
+#### Perguntas 
+
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+
 ## 2 - Compreensão dos Dados (Data Understanding)
 
 ### Base de Dados
