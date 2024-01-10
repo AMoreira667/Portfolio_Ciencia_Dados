@@ -569,4 +569,6 @@ summary(emprestimo_pred)
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/ca6ed24b-1c8b-4bca-a450-2c393d4da95a.png" width="500px" />
 </div>
 
+#### Análise:
+#### Para a base de teste, o modelo classificou 88,2% para como inadimplente e 11,8% para adimplente.
 ### Análise de desempenho - Matriz de contigência para classificação
