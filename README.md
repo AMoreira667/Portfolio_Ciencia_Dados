@@ -589,19 +589,33 @@ CrossTable(emprestimo_test$Classif,
 </div>
 
 #### Análise:
-#### A Acurácia de 77,4% significa que, em geral, a cada 100 clientes, o modelo identifica corretamente se haverá ou não inadimplência para 77 deles. Já a Sensibilidade indica que cerca de 91% dos clientes que pagam suas dívidas em dias são corretamente classificados pelo modelo. Por outro lado, a Especificidade indica que cerca de 40,5% dos clientes que não pagam suas dívidas em dia são corretamente classificados pelo modelo. O modelo apresenta um ótimo desempenho de acordo com os índices de Acurácia e Sensibilidade, porém em Especificidade podemos observar que o modelo apresenta um desempenho abaixo do critério de aceitação.
+#### A Acurácia de 77,4% significa que, em geral, a cada 100 clientes, o modelo identifica corretamente se haverá ou não inadimplência para 77 deles. Já a Sensibilidade indica que cerca de 91% dos clientes que pagam suas dívidas em dias são corretamente classificados pelo modelo. Por outro lado, a Especificidade indica que cerca de 40,5% dos clientes que não pagam suas dívidas em dia são corretamente classificados pelo modelo. O modelo apresenta um ótimo desempenho de acordo com os índices de Acurácia e Sensibilidade, porém em Especificidade podemos observar que o modelo apresenta um desempenho abaixo do critério de aceitação. Nitidamente, os parâmetrost estão desbalancados, utilizaremos uma "Matriz de Custo" para equalizar esses parâmetros.
 
 ### Melhorando a performace do modelo - Matriz de custo
 
-####
+#### A matriz de custo é uma ferramenta utilizada em problemas de classificação para avaliar o desempenho de um modelo preditivo, levando em consideração os custos associados aos diferentes tipos de erros que o modelo pode cometer. Em alguns casos, ela também pode ser utilizada como parte de estratégias de balanceamento em modelos preditivos.
+
+#### Ao aplicar custos a cada uma dessas categorias, é possível ajustar a métrica de avaliação para refletir as implicações práticas de diferentes tipos de erros. Em casos de desbalanceamento de classes, a matriz de custo pode ser útil para equilibrar o impacto de falsos positivos e falsos negativos.
+
+#### Por exemplo, se a classe positiva representa eventos raros, como fraudes em transações financeiras, o custo associado a um falso positivo (rotular erroneamente uma transação como fraude) pode ser muito alto. Nesse caso, você pode atribuir um custo maior para Falsos Positivos (FP) na matriz de custo.
 
 
 
 ````
-# Aumentando a precisão com 10 tentativas
-emprestimo_boost10 <- C5.0(emprestimo_train[2:7], emprestimo_train$Classif, trials = 10)
-print(emprestimo_boost10)
-summary(emprestimo_boost10)
+# Criando uma matriz de dimensoes de custo
+matrix_dimensions <- list(c("0", "1"), c("0", "1"))
+names(matrix_dimensions) <- c("Previsto", "Observado")
+matrix_dimensions
+
+# Construindo a matriz
+error_cost <- matrix(c(0, 2.5, 0, 2.5), nrow = 2, dimnames = matrix_dimensions)
+error_cost
+
+# Aplicando a matriz a arvore
+emprestimo_cost <- C5.0(emprestimo_train[2:7], emprestimo_train$Classif, costs = error_cost)
+
+# Avaliando a performance do modelo
+emprestimo_cost_pred <- predict(emprestimo_cost, emprestimo_test)
 ````
 
 
