@@ -428,7 +428,7 @@ summary(ponto_corte_sen_esp)
 emprestimo$Predito <- as.factor(ifelse(emprestimo$Probabilidade >= 0.7535, 1, 0))
 ````
 
-### Análise de desempenho - Matriz de contigencia para classificação
+### Análise de desempenho - Matriz de contigência para classificação
 
 ````
 # Obtendo tabela com medidas de desempenho
@@ -556,4 +556,17 @@ summary(emprestimo_model)
 
 ## 5 - Avaliação (Evaluation) - Decision tree com algoritimo C5.0
 
+### Análise de desempenho 
 
+````
+# Avaliando a performance do modelo
+emprestimo_pred <- predict(emprestimo_model, emprestimo_test)
+print(emprestimo_pred)
+summary(emprestimo_pred)
+````
+
+<div align="center">
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/ca6ed24b-1c8b-4bca-a450-2c393d4da95a.png" width="500px" />
+</div>
+
+### Análise de desempenho - Matriz de contigência para classificação
