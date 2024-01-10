@@ -414,8 +414,8 @@ vif(regressao_log)
 
 ````
 # Ponto de corte otimo que minimiza a diferenca entre sensibilidade e especificidade								
-ponto_corte_sen_esp <- cutpointr(emprestimo, Probabilidade, Classif,  method = minimize_metric, metric = abs_d_sens_spec,							
-                                 pos_class = 1, direction = ">=")								
+ponto_corte_sen_esp <- cutpointr(emprestimo, Probabilidade, Classif,  method = minimize_metric, metric = abs_d_sens_spec,					
+pos_class = 1, direction = ">=")								
 summary(ponto_corte_sen_esp) 	
 ````
 
@@ -431,7 +431,7 @@ emprestimo$Predito <- as.factor(ifelse(emprestimo$Probabilidade >= 0.7535, 1, 0)
 ### Análise de desempenho - Matriz de contigência para classificação
 
 ````
-# Obtendo tabela com medidas de desempenho
+# Matriz de contigencia para comparar valores observados e valores previstos
 tabela <- table(emprestimo$Classif, emprestimo$Predito)				
 (acuracia       <- (tabela[1,1] + tabela[2,2]) / sum(tabela))				
 (especificidade <- tabela[1,1] / (tabela[1,1] + tabela[1,2]))				
@@ -571,4 +571,21 @@ summary(emprestimo_pred)
 
 #### Análise:
 #### Para a base de teste, o modelo classificou 88,2% para como inadimplente e 11,8% para adimplente.
+
 ### Análise de desempenho - Matriz de contigência para classificação
+
+````
+# Matriz de contigencia para comparar valores observados e valores previstos
+CrossTable(emprestimo_test$Classif, 
+           emprestimo_pred,
+           prop.chisq = FALSE, 
+           prop.c = FALSE, 
+           prop.r = FALSE,
+           dnn = c('Observado', 'Previsto'))
+````
+
+<div align="center">
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/f82fbadc-d146-418f-85cd-d3e534860751.png" width="600px" />
+</div>
+
+
