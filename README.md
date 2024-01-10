@@ -599,25 +599,27 @@ CrossTable(emprestimo_test$Classif,
 
 #### Por exemplo, se a classe positiva representa eventos raros, como fraudes em transações financeiras, o custo associado a um falso positivo (rotular erroneamente uma transação como fraude) pode ser muito alto. Nesse caso, você pode atribuir um custo maior para Falsos Positivos (FP) na matriz de custo.
 
-
-
 ````
 # Criando uma matriz de dimensoes de custo
 matrix_dimensions <- list(c("0", "1"), c("0", "1"))
 names(matrix_dimensions) <- c("Previsto", "Observado")
-matrix_dimensions
+print(matrix_dimensions)
 
 # Construindo a matriz
 error_cost <- matrix(c(0, 2.5, 0, 2.5), nrow = 2, dimnames = matrix_dimensions)
-error_cost
+print(error_cost)
 
 # Aplicando a matriz a arvore
 emprestimo_cost <- C5.0(emprestimo_train[2:7], emprestimo_train$Classif, costs = error_cost)
 
 # Avaliando a performance do modelo
 emprestimo_cost_pred <- predict(emprestimo_cost, emprestimo_test)
+summary(emprestimo_cost_pred)
 ````
 
+<div align="center">
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/c6c43668-44bd-4bbf-a307-0a7a2735f648.png" width="500px" />
+</div>
 
 
 
