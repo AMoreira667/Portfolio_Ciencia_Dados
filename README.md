@@ -120,7 +120,7 @@ library(C50)
 library(gmodels)
 library(GGally)
 ````
-### Retirar a notacao cientifica
+### Retirar a notação científica
 
 ````
 options(scipen = 999) 				
