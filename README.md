@@ -591,7 +591,7 @@ CrossTable(emprestimo_test$Classif,
 #### Análise:
 #### A Acurácia de 77,4% significa que, em geral, a cada 100 clientes, o modelo identifica corretamente se haverá ou não inadimplência para 77 deles. Já a Sensibilidade indica que cerca de 91% dos clientes que pagam suas dívidas em dias são corretamente classificados pelo modelo. Por outro lado, a Especificidade indica que cerca de 40,5% dos clientes que não pagam suas dívidas em dia são corretamente classificados pelo modelo. O modelo apresenta um ótimo desempenho de acordo com os índices de Acurácia e Sensibilidade, porém em Especificidade podemos observar que o modelo apresenta um desempenho abaixo do critério de aceitação. Nitidamente, os parâmetros estão desbalanceados, utilizaremos uma "Matriz de Custo" para equalizar esses parâmetros.
 
-### Melhorando a performace do modelo - Matriz de custo
+### Melhorando a performace do modelo - Alicando a matriz de custo
 
 #### A matriz de custo é uma ferramenta utilizada em problemas de classificação para avaliar o desempenho de um modelo preditivo, levando em consideração os custos associados aos diferentes tipos de erros que o modelo pode cometer. Em alguns casos, ela também pode ser utilizada como parte de estratégias de balanceamento em modelos preditivos.
 
@@ -630,4 +630,18 @@ summary(emprestimo_cost_pred)
 #### Depois da matriz de custo:
 #### Inadimplentes: 59% | Adimplentes: 41%
 
+### Análise de desempenho - Matriz de contigência para classificação após matriz de custo
 
+````
+# Matriz de contigencia para comparar valores observados e valores previstos
+CrossTable(emprestimo_test$Classif, 
+           emprestimo_cost_pred,
+           prop.chisq = FALSE, 
+           prop.c = FALSE, 
+           prop.r = FALSE,
+           dnn = c('Observado', 'Previsto'))
+````
+
+<div align="center">
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/33dd066e-293a-42bc-9f69-dcdaaf9aab93.png" width="600px" />
+</div>
