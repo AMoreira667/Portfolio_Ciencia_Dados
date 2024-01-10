@@ -589,7 +589,9 @@ CrossTable(emprestimo_test$Classif,
 </div>
 
 #### Análise:
-#### A Acurácia de 77,4% significa que, em geral, a cada 100 clientes, o modelo identifica corretamente se haverá ou não inadimplência para 77 deles. Já a Sensibilidade indica que cerca de 91% dos clientes que pagam suas dívidas em dias são corretamente classificados pelo modelo. Por outro lado, a Especificidade indica que cerca de 40,5% dos clientes que não pagam suas dívidas em dia são corretamente classificados pelo modelo. O modelo apresenta um ótimo desempenho de acordo com os índices de Acurácia e Sensibilidade, porém em Especificidade podemos observar que o modelo apresenta um desempenho abaixo do critério de aceitação. Nitidamente, os parâmetros estão desbalanceados, utilizaremos uma "Matriz de Custo" para equalizar esses parâmetros.
+#### A Acurácia de 77,4% significa que, em geral, a cada 100 clientes, o modelo identifica corretamente se haverá ou não inadimplência para 77 deles. Já a Sensibilidade indica que cerca de 91% dos clientes que pagam suas dívidas em dias são corretamente classificados pelo modelo. Por outro lado, a Especificidade indica que cerca de 40,5% dos clientes que não pagam suas dívidas em dia são corretamente classificados pelo modelo. 
+
+#### O modelo apresenta um ótimo desempenho de acordo com os índices de Acurácia e Sensibilidade, porém em Especificidade podemos observar que o modelo apresenta um desempenho abaixo do critério de aceitação. Nitidamente, os parâmetros estão desbalanceados, utilizaremos uma "Matriz de Custo" para equalizar esses parâmetros.
 
 ### Melhorando a performace do modelo - Aplicando a matriz de custo
 
@@ -645,3 +647,8 @@ CrossTable(emprestimo_test$Classif,
 <div align="center">
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/33dd066e-293a-42bc-9f69-dcdaaf9aab93.png" width="600px" />
 </div>
+
+#### Análise:
+#### A Acurácia de 70% significa que, em geral, a cada 100 clientes, o modelo identifica corretamente se haverá ou não inadimplência para 70 deles. Já a Sensibilidade indica que cerca de 70% dos clientes que pagam suas dívidas em dias são corretamente classificados pelo modelo. Por outro lado, a Especificidade indica que cerca de 70% dos clientes que não pagam suas dívidas em dia são corretamente classificados pelo modelo. 
+
+##### De acordo com os índices de Acurácia, Sensibilidade e Especificidade, podemos afirmar que o modelo apresenta um ótimo desempenho, além de estar devidamente balanceado após a aplicação da matriz de custo.
