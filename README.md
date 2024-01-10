@@ -30,19 +30,18 @@
 
 #### O objetivo do trabalho é predizer e avaliar o risco de empréstimo de clientes PF (Pessoa Física) de uma instituição financeira. A predição será realizada utilizando dados históricos transacionais e modelos estatísticos e algoritmos de Inteligência Artificial, que selecionarão as características mais relevantes que explicam a justificativa de empréstimo ou não empréstimo. Desta forma, a empresa poderá traçar estratégias financeiras, desenvolver réguas de empréstimos e ações preventivas para minimizar de forma proativa sua taxa de inadimplência de empréstimos.
 
-#### Perguntas 
+#### Perguntas feitas pelo time de Negócios:
 
 <ul>
-  <li> Qual é idade média dos clientes? </li>
-  <li> Quantos na 2</li>
-  <li>Item 3</li>
+  <li> Qual é Idade média dos clientes? </li>
+  <li> Quantos anos em média as pessoas moram na mesma residênica? </li>
+  <li> Qual foi a maior Renda observada? </li>
+  <li> Existe alguma associação entre Tempo de Experiência e Renda? Se sim, qual foi a associação observada? </li>
+  <li> Qual é o valor médio que os clientes tem em Débito Renda? </li>
+  <li> Qual é a proporção de clientes que tem Variação de Debito negativa? </li>
+  <li> Quais aspectos parecem estar associados ao fato de o cliente sem um bom ou mau pagador? </li>
+  <li> Quais grupos/perfis de clientes parecem serem mais propensos serem bons ou maus pagadores? </li>
 </ul>
-
-<ol>
-  <li>Item 1</li>
-  <li>Item 2</li>
-  <li>Item 3</li>
-</ol>
 
 <div align="center">
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/eddb0d7d-28df-4acf-93fd-c3280934083b.png" width="700px" />
