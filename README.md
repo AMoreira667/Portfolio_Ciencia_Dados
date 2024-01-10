@@ -589,7 +589,7 @@ CrossTable(emprestimo_test$Classif,
 </div>
 
 #### Análise:
-#### A Acurácia de 77,4% significa que, em geral, a cada 100 clientes, o modelo identifica corretamente se haverá ou não inadimplência para 77 deles. Já a Sensibilidade indica que cerca de 91% dos clientes que pagam suas dívidas em dias são corretamente classificados pelo modelo. Por outro lado, a Especificidade indica que cerca de 40,5% dos clientes que não pagam suas dívidas em dia são corretamente classificados pelo modelo. O modelo apresenta um ótimo desempenho de acordo com os índices de Acurácia e Sensibilidade, porém em Especificidade podemos observar que o modelo apresenta um desempenho abaixo do critério de aceitação. Nitidamente, os parâmetrost estão desbalancados, utilizaremos uma "Matriz de Custo" para equalizar esses parâmetros.
+#### A Acurácia de 77,4% significa que, em geral, a cada 100 clientes, o modelo identifica corretamente se haverá ou não inadimplência para 77 deles. Já a Sensibilidade indica que cerca de 91% dos clientes que pagam suas dívidas em dias são corretamente classificados pelo modelo. Por outro lado, a Especificidade indica que cerca de 40,5% dos clientes que não pagam suas dívidas em dia são corretamente classificados pelo modelo. O modelo apresenta um ótimo desempenho de acordo com os índices de Acurácia e Sensibilidade, porém em Especificidade podemos observar que o modelo apresenta um desempenho abaixo do critério de aceitação. Nitidamente, os parâmetros estão desbalanceados, utilizaremos uma "Matriz de Custo" para equalizar esses parâmetros.
 
 ### Melhorando a performace do modelo - Matriz de custo
 
