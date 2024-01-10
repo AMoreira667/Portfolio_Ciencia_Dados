@@ -516,6 +516,8 @@ emprestimo_test  <- emprestimo[-train_sample, ]
 
 #### Nesse etapa estamos seguimentando o dataframe em "emprestimo_train" para treino (80%) e em "emprestimo_test" para teste (20%).
 
+#### Verificando a proporção da variável resposta
+
 ````
 # Verificando a proporção da variavel resposta 
 prop.table(table(emprestimo_train$Classif))
@@ -525,6 +527,8 @@ prop.table(table(emprestimo_test$Classif))
 <div align="center">
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/d428cf4f-ae9b-44ff-8d59-2218c85b3a98.png" width="500px" />
 </div>
+
+#### Transfromando a variável resposta "Classif" para factor
 
 ````
 # Transformando a variavel resposta "Classif" para factor
