@@ -621,5 +621,13 @@ summary(emprestimo_cost_pred)
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/c6c43668-44bd-4bbf-a307-0a7a2735f648.png" width="400px" />
 </div>
 
+#### Análise:
+#### Para a base de teste, o modelo classificou 59% para como inadimplente e 41% para adimplente, houve uma melhora significativa no balanceamento das distribuições.
+
+#### Antes da matriz de custo:
+#### Inadimpltes: 88,2 | Adimpletes: 11,8%
+
+#### Depois da matriz de custo:
+#### Inadimplentes: 59% | Adimplentes: 41%
 
 
