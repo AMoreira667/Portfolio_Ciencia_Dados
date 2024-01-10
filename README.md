@@ -551,3 +551,6 @@ print(emprestimo_model)
 summary(emprestimo_model)
 ````
 
+<div align="center">
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/f3753324-73ca-474c-85d1-516cbe7447e7.png" width="500px" />
+</div>
