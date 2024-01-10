@@ -618,7 +618,7 @@ summary(emprestimo_cost_pred)
 ````
 
 <div align="center">
-<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/c6c43668-44bd-4bbf-a307-0a7a2735f648.png" width="500px" />
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/c6c43668-44bd-4bbf-a307-0a7a2735f648.png" width="400px" />
 </div>
 
 
