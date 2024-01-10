@@ -497,6 +497,8 @@ print(auc)
 
 #### Os modelos C5.0 são bastante robustos na presença de problemas como dados omissos e grandes números de campos de entrada. Eles geralmente não requerem longos tempos de treinamento para estimar. Além disso, os modelos C5.0 tendem a ser mais fáceis de entender do que alguns outros tipos de modelo, já que as regras derivadas do modelo possuem uma interpretação muito clara. O C5.0 também oferece o método de reforço poderoso para aumentar a precisão da classificação.
 
+#### Divisaõ da base para treino e teste
+
 ````
 # Usando sample para construir os dados de treino e de teste
 set.seed(123)
