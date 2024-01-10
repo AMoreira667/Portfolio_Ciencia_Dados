@@ -591,7 +591,7 @@ CrossTable(emprestimo_test$Classif,
 #### Análise:
 #### A Acurácia de 77,4% significa que, em geral, a cada 100 clientes, o modelo identifica corretamente se haverá ou não inadimplência para 77 deles. Já a Sensibilidade indica que cerca de 91% dos clientes que pagam suas dívidas em dias são corretamente classificados pelo modelo. Por outro lado, a Especificidade indica que cerca de 40,5% dos clientes que não pagam suas dívidas em dia são corretamente classificados pelo modelo. O modelo apresenta um ótimo desempenho de acordo com os índices de Acurácia e Sensibilidade, porém em Especificidade podemos observar que o modelo apresenta um desempenho abaixo do critério de aceitação. Nitidamente, os parâmetros estão desbalanceados, utilizaremos uma "Matriz de Custo" para equalizar esses parâmetros.
 
-### Melhorando a performace do modelo - Alicando a matriz de custo
+### Melhorando a performace do modelo - Aplicando a matriz de custo
 
 #### A matriz de custo é uma ferramenta utilizada em problemas de classificação para avaliar o desempenho de um modelo preditivo, levando em consideração os custos associados aos diferentes tipos de erros que o modelo pode cometer. Em alguns casos, ela também pode ser utilizada como parte de estratégias de balanceamento em modelos preditivos.
 
