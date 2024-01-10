@@ -69,13 +69,13 @@
 #### Depois que os dados são coletados e armazenados em um banco de dados, a análise descritiva é o primeiro passo dentro do AED. Nessa etapa, os pesquisadores se familiarizam e organizam esses dados de forma sintetizada para saber que tipo de informações podem ser tiradas deles.
 #### Dito de outra forma, antes de realizar uma análise exploratória de dados, temos que preparar esses dados para que se tornem analisáveis. Há um conjunto de tarefas envolvido nesse processo:
 
-#### ✓ Identificar quais são as variáveis envolvidas e como elas se relacionam;
+#### Identificar quais são as variáveis envolvidas e como elas se relacionam;
 
-#### ✓ Identificar os chamados outliers, casos de exceção que não seguem uma tendência muito diferente da maior parte da amostra analisada;
+#### Identificar os chamados outliers, casos de exceção que não seguem uma tendência muito diferente da maior parte da amostra analisada;
 
-#### ✓ Verificar se há dados ausentes;
+#### Verificar se há dados ausentes;
 
-#### ✓ Fazer algumas suposições preliminares sobre as tendências que esses dados demonstram, como normalidade e linearidade.
+#### Fazer algumas suposições preliminares sobre as tendências que esses dados demonstram, como normalidade e linearidade.
 
 #### Esse é o processo que acontece nos bastidores de um sistema voltado para Business Intelligence (BI), que é a análise de dados críticos para ajudar os gestores de uma empresa a tomarem as melhores decisões. 
 
@@ -590,6 +590,20 @@ CrossTable(emprestimo_test$Classif,
 
 #### Análise:
 #### A Acurácia de 77,4% significa que, em geral, a cada 100 clientes, o modelo identifica corretamente se haverá ou não inadimplência para 77 deles. Já a Sensibilidade indica que cerca de 91% dos clientes que pagam suas dívidas em dias são corretamente classificados pelo modelo. Por outro lado, a Especificidade indica que cerca de 40,5% dos clientes que não pagam suas dívidas em dia são corretamente classificados pelo modelo. O modelo apresenta um ótimo desempenho de acordo com os índices de Acurácia e Sensibilidade, porém em Especificidade podemos observar que o modelo apresenta um desempenho abaixo do critério de aceitação.
+
+### Melhorando a performace do modelo - Matriz de custo
+
+####
+
+
+
+````
+# Aumentando a precisão com 10 tentativas
+emprestimo_boost10 <- C5.0(emprestimo_train[2:7], emprestimo_train$Classif, trials = 10)
+print(emprestimo_boost10)
+summary(emprestimo_boost10)
+````
+
 
 
 
