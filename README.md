@@ -554,3 +554,7 @@ summary(emprestimo_model)
 <div align="center">
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/fe7107d3-54cc-44fc-95e7-166ccc4c006c.png" width="500px" />
 </div>
+
+## 5 - Avaliação (Evaluation) - Decision tree com algoritimo C5.0
+
+
