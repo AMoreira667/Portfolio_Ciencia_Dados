@@ -531,3 +531,7 @@ class(emprestimo_train$Classif) # Verificar a classe da variável
 ````
 
 #### Obs: A transformação de uma variável em fator é uma prática importante para garantir que você esteja tratando corretamente variáveis categóricas e aproveitando ao máximo as funcionalidades estatísticas. Em certos casos, se uma variável categórica não for tratada como fator, os algoritmos podem interpretá-la como uma variável numérica, o que pode levar a interpretações equivocadas dos dados.
+
+<div align="center">
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/fe29409b-90bb-4ded-b3e4-d9cccac2bc15.png" width="500px" />
+</div>
