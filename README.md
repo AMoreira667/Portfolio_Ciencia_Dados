@@ -651,4 +651,4 @@ CrossTable(emprestimo_test$Classif,
 #### Análise:
 #### A Acurácia de 70% significa que, em geral, a cada 100 clientes, o modelo identifica corretamente se haverá ou não inadimplência para 70 deles. Já a Sensibilidade indica que cerca de 70% dos clientes que pagam suas dívidas em dias são corretamente classificados pelo modelo. Por outro lado, a Especificidade indica que cerca de 70% dos clientes que não pagam suas dívidas em dia são corretamente classificados pelo modelo. 
 
-##### De acordo com os índices de Acurácia, Sensibilidade e Especificidade, podemos afirmar que o modelo apresenta um ótimo desempenho, além de estar devidamente balanceado após a aplicação da matriz de custo.
+#### De acordo com os índices de Acurácia, Sensibilidade e Especificidade, podemos afirmar que o modelo apresenta um ótimo desempenho, além de estar devidamente balanceado após a aplicação da matriz de custo.
