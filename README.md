@@ -33,13 +33,13 @@
 #### Perguntas feitas pelo time de Negócios:
 
 <ul>
-  <li> Qual é Idade média dos clientes? </li>
-  <li> Quantos anos em média as pessoas moram na mesma residênica? </li>
-  <li> Qual foi a maior Renda observada? </li>
-  <li> Existe alguma associação entre Tempo de Experiência e Renda? Se sim, qual foi a associação observada? </li>
-  <li> Qual é o valor médio que os clientes tem em Débito Renda? </li>
-  <li> Qual é a proporção de clientes que tem Variação de Debito negativa? </li>
-  <li> Quais aspectos parecem estar associados ao fato de o cliente sem um bom ou mau pagador? </li>
+  <li> Quais são as características demográficas dos bons pagadores em comparação com os maus pagadores? 
+       Explorar variáveis como idade, renda, tempo de residência, entre outras <li>
+  <li> Existe alguma correlação entre a idade dos clientes e sua classificação como bons ou maus pagadores? </li>
+  <li> A estabilidade no tempo de residência tem alguma influência na capacidade de pagamento? </li>
+ 
+  <li> Quais são as variáveis mais importantes na previsão da capacidade de pagamento? </li>
+  <li> Como os bons e maus pagadores estão distribuídos ao longo das diferentes categorias de cada variável? <li>
   <li> Quais grupos/perfis de clientes parecem serem mais propensos serem bons ou maus pagadores? </li>
 </ul>
 
