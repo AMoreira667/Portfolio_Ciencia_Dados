@@ -306,9 +306,11 @@ ggpairs(emprestimo[,c(2:8)], title="Correlograma") # Correlograma - library(GGal
 
 ## 3 - Preparação dos Dados (Data Preparation)
 
-#### O pré-processamento de dados é uma etapa crucial no desenvolvimento de modelos de machine learning, pois influencia diretamente na qualidade e no desempenho do modelo. Ele envolve uma série de técnicas e procedimentos aplicados aos dados brutos antes de serem alimentados ao algoritmo de machine learning. 
+### Pré-processamento 
 
-#### Normalização e Padronização:
+#### É uma etapa crucial no desenvolvimento de modelos de machine learning, pois influencia diretamente na qualidade e no desempenho do modelo. Ele envolve uma série de técnicas e procedimentos aplicados aos dados brutos antes de serem alimentados ao algoritmo de machine learning. 
+
+### Normalização e Padronização:
 
 #### A normalização e padronização dos dados são técnicas comuns de pré-processamento que colocam todas as variáveis em uma escala comparável, evitando que alguma variável domine sobre as outras, o que é especialmente importante em algoritmos sensíveis à escala.
 
@@ -325,7 +327,7 @@ dados_teste[, c("Idade", "Tempo_Experiencia", "Tempo_Endereco", "Renda", "Debito
 
 ## 4 - Modelagem (Modeling)
 
-### Regressão logística (RStudio)
+### Modelagem com Machine Learning - Regressão logística (RStudio)
 
 #### A modelagem estatística tradicional é uma abordagem que envolve o uso de métodos estatísticos clássicos para analisar dados e fazer inferências sobre populações ou processos subjacentes. Essa abordagem é frequentemente utilizada para entender as relações entre variáveis, realizar previsões e tomar decisões informadas com base em evidências quantitativas. 
 
