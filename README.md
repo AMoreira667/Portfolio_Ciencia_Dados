@@ -329,13 +329,9 @@ dados_teste[, c("Idade", "Tempo_Experiencia", "Tempo_Endereco", "Renda", "Debito
 
 ### Modelagem com Machine Learning - Regressão logística (RStudio)
 
-#### A modelagem estatística tradicional é uma abordagem que envolve o uso de métodos estatísticos clássicos para analisar dados e fazer inferências sobre populações ou processos subjacentes. Essa abordagem é frequentemente utilizada para entender as relações entre variáveis, realizar previsões e tomar decisões informadas com base em evidências quantitativas. 
+#### A Regressão logística é um modelo de aprendizado de máquina que é comumente utilizado para problemas de classificação binária. Apesar do nome "regressão", esse modelo é usado para prever a probabilidade de um evento pertencer a uma das duas classes (por exemplo, sim ou não, 1 ou 0).
 
-#### A regressão logística múltipla é uma técnica estatística utilizada para modelar a relação entre uma variável binária (ou dicotômica) dependente e várias variáveis independentes, que podem ser tanto numéricas quanto categóricas. Essa técnica é uma extensão da regressão logística simples, que lida com apenas uma variável independente.
-
-#### Na regressão logística múltipla, o objetivo é estimar os coeficientes das variáveis independentes de forma a entender como cada uma delas contribui para a probabilidade de um evento ocorrer. 
-
-#### A principal diferença em relação à regressão linear é que a regressão logística modela a relação entre as variáveis independentes e a log-odds da probabilidade do evento acontecer. A log-odds é a transformação logarítmica das probabilidades e é uma forma conveniente de trabalhar com problemas de classificação binária.
+#### A Regressão logística é particularmente útil quando a variável de saída é categórica e binária. Ela estima a probabilidade de uma instância pertencer a uma classe específica com base em uma combinação linear de variáveis independentes. A função logística (também chamada de função sigmoid) é utilizada para transformar a saída linear em uma probabilidade entre 0 e 1.
 
 ````
 # Modelagem estatistica tradicional - Regressao logisttica
