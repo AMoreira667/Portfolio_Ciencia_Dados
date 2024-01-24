@@ -334,16 +334,11 @@ dados_teste[, c("Idade", "Tempo_Experiencia", "Tempo_Endereco", "Renda", "Debito
 #### A Regressão logística é particularmente útil quando a variável de saída é categórica e binária. Ela estima a probabilidade de uma instância pertencer a uma classe específica com base em uma combinação linear de variáveis independentes. A função logística (também chamada de função sigmoid) é utilizada para transformar a saída linear em uma probabilidade entre 0 e 1.
 
 ````
-# Modelagem estatistica tradicional - Regressao logisttica
-regressao_log <- glm(Classif ~ Idade + 
-                     Tempo_Experiencia + 
-                     Tempo_Endereco + 
-                     Renda + 
-                     Debito_Renda +
-                     Variacao_Debito, 
-                     binomial(link = "logit"), 
-                     data = emprestimo)
-summary(regressao_log)
+# Dividindo os dados em conjuntos de treinamento e teste (80% treinamento, 20% teste)
+set.seed(123)  # Define uma semente para reproducibilidade
+indices_treino <- createDataPartition(emprestimo$Classif, p = 0.8, list = FALSE)
+dados_treino <- emprestimo[indices_treino, ]
+dados_teste <- emprestimo[-indices_treino, ]
 ````
 <div align="center">
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/05c2dade-d92b-4e9f-8cb8-8fcfc1b7f286.png" width="600px" />
@@ -399,9 +394,9 @@ emprestimo$Probabilidade <- predict(regressao_log, emprestimo, type = "response"
 
 #### Quando lidamos com uma regressão múltipla, ou seja, com 2 ou mais variáveis explicativas, algumas delas podem representar informações muito similares. Esse tipo de redundância, no contexto de análise de regressão, é denominado multicolinearidade. 
 
-#### ✓ A multicolinearidade ocorre quando variáveis explicativas fortemente associadas entre si são consideradas no mesmo modelo de regressão, seja linear ou logística. 
+#### A multicolinearidade ocorre quando variáveis explicativas fortemente associadas entre si são consideradas no mesmo modelo de regressão, seja linear ou logística. 
 
-#### ✓ A redundância de informação eleva potencialmente o nível de variabilidade dos parâmetros estimados (betas) associados às variáveis correlacionadas, distorcendo a sua interpretação. Isso torna o modelo instável e, muitas vezes, compromete a sua utilização para predições futuras.
+#### A redundância de informação eleva potencialmente o nível de variabilidade dos parâmetros estimados (betas) associados às variáveis correlacionadas, distorcendo a sua interpretação. Isso torna o modelo instável e, muitas vezes, compromete a sua utilização para predições futuras.
 
 #### A estatística VIF (Variance Inflation Factor, ou Fator de Inflação da Variância) mensura o quanto a variância de cada coeficiente estimado do modelo está sendo inflacionada por conta de multicolinearidade. A partir de estudos anteriores, valores de VIF superiores a 4 já revelam sinais de multicolinearidade. 	
 
