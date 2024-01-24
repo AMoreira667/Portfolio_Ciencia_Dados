@@ -336,7 +336,7 @@ dados_teste[, c("Idade", "Tempo_Experiencia", "Tempo_Endereco", "Renda", "Debito
 
 #### A Regressão logística é particularmente útil quando a variável de saída é categórica e binária. Ela estima a probabilidade de uma instância pertencer a uma classe específica com base em uma combinação linear de variáveis independentes. A função logística (também chamada de função sigmoid) é utilizada para transformar a saída linear em uma probabilidade entre 0 e 1.
 
-#### Divisão da base para treino e teste
+### Divisão da base para treino e teste
 
 #### A divisão de dados em conjuntos de treinamento e teste é uma prática comum em Machine Learning. O objetivo é avaliar a capacidade do modelo de generalizar para novos dados que não foram usados no treinamento. A ideia é treinar o modelo em um conjunto de dados de treinamento e avaliar seu desempenho em um conjunto de dados de teste. O conjunto de treinamento é usado para ajustar os parâmetros do modelo, enquanto o conjunto de teste é usado para avaliar o desempenho do modelo em dados não vistos. A divisão dos dados em conjuntos de treinamento e teste ajuda a evitar o overfitting, que ocorre quando o modelo se ajusta demais aos dados de treinamento e não generaliza bem para novos dados.
 
@@ -348,7 +348,7 @@ dados_treino <- emprestimo[indices_treino, ]
 dados_teste <- emprestimo[-indices_treino, ]
 ````
 
-#### Criando modelo de Regressão logística
+### Criando modelo de Regressão logística
 
 ````
 # Modelagem com Machine Learning - Regressao logistica
@@ -367,7 +367,7 @@ summary(regressao_log)
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/eaa28942-4d2b-4508-85a0-895f0df3623c.png" width="600px" />
 </div>
 
-#### Selecionando as melhores variáveis
+### Selecionando as melhores variáveis
 
 ````
 # Feature Selection - Selecionando as melhores variáveis
@@ -436,6 +436,11 @@ vif(regressao_log)
 #### Análise: 
 #### Interpretatando os dados se saída, não há evidencias claras de multicolinearidade no modelo, pois todos os valores foram menores que 4, podendo seguir com as próximas etapas.
 
+### Fazendo previsões no conjunto de teste
+````
+previsoes <- predict(regressao_log, newdata = dados_teste, type = "response")
+````
+
 ## 5 - Avaliação (Evaluation) - Regressão logística
 
 ### Ponto de corte
@@ -462,8 +467,8 @@ summary(ponto_corte_sen_esp)
 #### Ponto de corte de 0,7535 que minimiza as diferenças entre Sensibilidade e Especificidade. 
 
 ````
-# Obtendo a probabilidade estimada de ser um bom pagador para cada cliente 					
-emprestimo$Predito <- as.factor(ifelse(emprestimo$Probabilidade >= 0.7535, 1, 0))
+# Convertendo as probabilidades em classes (0 ou 1)
+previsoes_classes <- as.factor(ifelse(previsoes >= 0.7535, 1, 0))
 ````
 
 ### Análise de desempenho - Matriz de contigência para classificação
