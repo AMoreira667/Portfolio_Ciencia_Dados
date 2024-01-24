@@ -94,21 +94,19 @@ setwd("inserir directorio do arquivo"") # Ou Ctrl + Shift + H
 ### Pacotes necessários
 
 ````
-install.packages("readxl")            # Para leitura de dados Excel
-install.packages("Information")				# Para calculo IV
-install.packages("car")				        # Para analise de regressao e diagnostico de modelos 
-install.packages("cutpointr")				  # Para calculo ponto de corte
-install.packages("ROCR")	            # Para calculo KS e AUC			
-install.packages("dplyr")             # Para manipulacao e transformacao dados
-install.packages("psych")             # Para analise psicometrica e estatisitca
-install.packages("rpart")             # Para decision tree
-install.packages("rpart.plot")        # Para visualizacao descision tree
-install.packages("C50")               # Algoritmo C50
-install.packages("gmodels")           # Para matriz de contigencia (C50)
-install.packages("GGally")            # Correlograma
-install.packages("caret")             # Para treino de classificacao e regressao
-install.packages("e1071")             # Para matriz de contigencia
-install.packages("pROC")              # Para plotar curva ROC
+install.packages("readxl")             # Para leitura de dados Excel
+install.packages("Information")				 # Para calculo IV
+install.packages("car")				         # Para analise de regressao e diagnostico de modelos 
+install.packages("cutpointr")				   # Para calculo ponto de corte
+install.packages("ROCR")	             # Para calculo KS e AUC			
+install.packages("dplyr")              # Para manipulacao e transformacao dados
+install.packages("psych")              # Para analise psicometrica e estatisitca
+install.packages("C50")                # Decision Tree com algoritmo C50
+install.packages("gmodels")            # Para matriz de contigencia (C50)
+install.packages("GGally")             # Correlograma
+install.packages("caret")              # Para treino de classificacao e regressao
+install.packages("e1071")              # Para matriz de contigencia
+install.packages("pROC")               # Para plotar curva ROC
 ````
 ### Bibliotecas necessárias
 
@@ -120,8 +118,6 @@ library(cutpointr)
 library(ROCR)
 library(dplyr)
 library(psych)
-library(rpart)
-library(rpart.plot)
 library(C50)
 library(gmodels)
 library(GGally)
