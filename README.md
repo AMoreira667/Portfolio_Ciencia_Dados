@@ -446,7 +446,7 @@ vif(regressao_log)
 
 ````
 # Obtendo a probabilidade estimada de cancelamento para cada cliente					
-emprestimo$Probabilidade <- predict(regressao_log, emprestimo, type = "response")	# Criar coluna com as probabilidades no R					
+emprestimo$Probabilidade <- predict(regressao_log, emprestimo, type = "response") # Criar coluna com as probabilidades no R					
 #delete.response(termobj = emprestimo$Probabilidade) # Deletar coluna
 
 # Ponto de corte otimo que minimiza a diferenca entre sensibilidade e especificidade								
@@ -455,8 +455,10 @@ pos_class = 1, direction = ">=")
 summary(ponto_corte_sen_esp) 	
 ````
 
+#### Ponto de corte de 0,7535 que minimiza as diferenças entre Sensibilidade e Especificidade. 
+
 <div align="center">
-<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/6dd9aaf3-4fb6-4a8d-aa76-490f966fd3d9.png" width="700px" />
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/b84b0315-f189-4f26-b9c3-e2f724a21f68.png" width="700px" />
 </div>
 
 ````
