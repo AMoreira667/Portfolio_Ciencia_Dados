@@ -413,17 +413,6 @@ summary(regressao_log)
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/1b3cdaf1-9637-41bc-a483-fa537417e59c.png" width="600px" />
 </div>
 
-### Obtendo as probabilidades estimadas para cada cliente
-
-````
-# Obtendo a probabilidade estimada de para cada cliente					
-emprestimo$Probabilidade <- predict(regressao_log, emprestimo, type = "response") # Criar coluna com as probabilidades estimadas 
-````
-
-<div align="center">
-<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/c8011556-a8de-4799-9ed8-6feecbd75240.png" width="600px" />
-</div>
-
 ### Estatística VIF - Verificando Multicolinearidade
 
 #### Quando lidamos com uma regressão múltipla, ou seja, com 2 ou mais variáveis explicativas, algumas delas podem representar informações muito similares. Esse tipo de redundância, no contexto de análise de regressão, é denominado multicolinearidade. 
