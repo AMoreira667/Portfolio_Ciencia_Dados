@@ -95,16 +95,20 @@ setwd("inserir directorio do arquivo"") # Ou Ctrl + Shift + H
 
 ````
 install.packages("readxl")            # Para leitura de dados Excel
-install.packages("Information")       # Para calculo IV 
-install.packages("car")               # Para analise de regressao e diagnostico de modelos 
-install.packages("cutpointr")         # Para calculo ponto de corte
-install.packages("ROCR")              # Para calculo KS e AUC			
+install.packages("Information")				# Para calculo IV
+install.packages("car")				        # Para analise de regressao e diagnostico de modelos 
+install.packages("cutpointr")				  # Para calculo ponto de corte
+install.packages("ROCR")	            # Para calculo KS e AUC			
 install.packages("dplyr")             # Para manipulacao e transformacao dados
 install.packages("psych")             # Para analise psicometrica e estatisitca
-install.packages("C50")               # Decision tree algoritmo C5.0
-install.packages("gmodels")           # Matriz de contigencia
-installed.packages()                  # Para verificar bibliotecas instaladas
+install.packages("rpart")             # Para decision tree
+install.packages("rpart.plot")        # Para visualizacao descision tree
+install.packages("C50")               # Algoritmo C50
+install.packages("gmodels")           # Para matriz de contigencia (C50)
 install.packages("GGally")            # Correlograma
+install.packages("caret")             # Para treino de classificacao e regressao
+install.packages("e1071")             # Para matriz de contigencia
+install.packages("pROC")              # Para plotar curva ROC
 ````
 ### Bibliotecas necessárias
 
@@ -116,9 +120,14 @@ library(cutpointr)
 library(ROCR)
 library(dplyr)
 library(psych)
+library(rpart)
+library(rpart.plot)
 library(C50)
 library(gmodels)
 library(GGally)
+library(caret)
+library(e1071)
+library(pROC)
 ````
 ### Retirar a notação científica
 
@@ -132,7 +141,7 @@ options(scipen = 999)
 emprestimo <- read_excel("Regressao logistica.xlsx", sheet = "Emprestimo - Dados")							
 ````
 
-### Analise exploratoria dos dados - Univariada
+### Analise exploratória dos dados - Univariada
 
 ### Cabeçalho
 
@@ -258,7 +267,7 @@ hist(emprestimo$Variacao_Debito, main = "Histograma Variacao_Debito", col = "dar
 #### Análise: 
 #### Analisando os dados do boxplot da variável Variacao_Debito, pode-se observar valores outliers (11,9%), onde os dados indicam que, para uma base de 5.000 clientes 75% tem variações de 0,17 em relação a 6 meses atrás e média de -0,43. Já analisando os dados do histograma, pode-se observar que a distribuição é assimétrica à direita, onde 88,1% dos clientes tem variações de debito em relação a 6 meses atrás entre -1 e 1,57 aproximadamente, que são capturadas pelas maiores porções do gráfico.
 
-### Analise exploratoria dos dados - Bivariada
+### Analise exploratória dos dados - Bivariada
 
 ````
 par(mfrow = c(2, 3)) # Inserir 2 graficos na mesma tela	
@@ -277,7 +286,7 @@ boxplot(Variacao_Debito ~ Classif, data = emprestimo, col = "darkgrey", main = "
 #### Análise: 
 #### Analisando os dados do boxplot da variável explicativa Debtio_Renda x variável resposta Classif, pode-se observar uma relação entre essas variáveis devido a disparidade entre os “0” e “1”.
 
-### Analise exploratoria dos dados - Bivariada com Information Value (IV)
+### Analise exploratória dos dados - Bivariada com Information Value (IV)
 
 #### O Valor da Informação, ou Information Value (IV), é um indicador que mensura a força da relação entre duas variáveis, sejam elas numéricas ou categóricas. No contexto da regressão logística, o IV é calculado entre as variáveis explicativas versus a variável resposta (binária) na fase de análise bivariada, sendo útil para realizar uma avaliação prévia de quais variáveis explicativas têm maior potencial de discriminação para a posterior construção de um modelo. Quanto maior o valor do IV, maior o grau de explicabilidade da variável explicativa sobre a resposta. Em grande parte das situações práticas, seu valor varia entre 0 a 0,5, ainda que possa assumir quaisquer valores positivos. 
 
