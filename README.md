@@ -471,7 +471,7 @@ summary(ponto_corte_sen_esp)
 previsoes_classes <- as.factor(ifelse(previsoes >= 0.7535, 1, 0))
 ````
 
-### Análise de desempenho - Matriz de contigência para classificação
+### Análise de desempenho - Matriz de contigência 
 
 ````
 # Criar a matriz de confusão usando o pacote caret
@@ -483,29 +483,15 @@ print(matriz_confusao)
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/08fa996c-5963-44cb-b51f-6e8efd6efffb.png" width="600px" />
 </div>
 
-#### Análise: 
-#### A Acurácia de 71,6% significa que, em geral, a cada 100 clientes, o modelo identifica corretamente se haverá ou não inadimplência para 72 deles. Já a Sensibilidade indica que cerca de 72% dos clientes que pagam suas dívidas em dias são corretamente classificados pelo modelo. A Especificidade indica que 72% dos clientes que não pagam suas dívidas em dia são corretamente classificados pelo modelo. 
+#### Análise:
+
+#### A Acurácia de 72% significa que, em geral, a cada 100 clientes, o modelo identifica corretamente se haverá ou não inadimplência para 72 deles. Já a Sensibilidade indica que cerca de 73% dos clientes que pagam suas dívidas em dias são corretamente classificados pelo modelo. A Especificidade indica que 72% dos clientes que não pagam suas dívidas em dia são corretamente classificados pelo modelo. 
 
 #### De acordo com os índices de Acurácia, Sensibilidade e Especificidade, podemos afirmar que o modelo apresenta um ótimo desempenho, além de estar devidamente balanceado.
 
-### Análise de desempenho - KS
+#### Neste modelo não foram implementadas técnicas de engenharia de recursos.
 
-#### A estatística de Kolmogorov-Smirnov (KS) reflete a máxima separação entre as curvas de frequências acumuladas de 2 grupos distintos de observações, no nosso caso, baseadas na variável resposta binária (Y). O valor do KS varia entre 0 (nenhuma separação) e 1 (separação completa).
-
-````
-# Obtendo o KS do modelo final
-ks <- max(attr(perf, 'y.values')[[1]] - attr(perf, 'x.values')[[1]])
-print(ks)
-````
-
-<div align="center">
-<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/8c696451-29d3-4a13-b4b0-269a6b1b68f3.png" width="600px" />
-</div>
-
-#### Análise:
-#### De acordo com o índice KS podemos afirmar que o modelo apresenta um desempenho muito bom.
-
-### Análise de desempenho - AUC
+### Análise de desempenho - Curva ROC
 
 #### O valor da área abaixo da curva ROC, abreviado como AUC, é um indicador da qualidade de classificação do modelo, associado a diferentes pontos de corte possíveis. Nesse sentido, é uma medida mais abrangente que o KS, que considera o distanciamento entre sensibilidade e especificidade para um único ponto de corte.
 
