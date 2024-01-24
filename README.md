@@ -367,7 +367,21 @@ summary(regressao_log)
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/eaa28942-4d2b-4508-85a0-895f0df3623c.png" width="600px" />
 </div>
 
-#### Selecionando as melhores variáveis 
+#### Selecionando as melhores variáveis
+
+````
+# Feature Selection - Selecionando as melhores variáveis
+formula <- "Classif ~ Idade + Tempo_Experiencia + Tempo_Endereco + Renda + Debito_Renda + Variacao_Debito"
+formula <- as.formula(formula)
+control <- trainControl(method = "repeatedcv", number = 10, repeats = 2)
+model <- train(formula, data = dados_treino, method = "glm", trControl = control)
+importance <- varImp(model, scale = FALSE)
+plot(importance)
+````
+
+<div align="center">
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/bcfd6127-f1d8-4a24-842e-e4cf346f7dfe.png" width="600px" />
+</div>
 
 ````
 # Modelagem com Machine Learning - Regressao logisttica - Retirando variável Tempo_Experiencia 
