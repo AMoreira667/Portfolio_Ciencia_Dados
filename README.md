@@ -455,11 +455,11 @@ pos_class = 1, direction = ">=")
 summary(ponto_corte_sen_esp) 	
 ````
 
-#### Ponto de corte de 0,7535 que minimiza as diferenças entre Sensibilidade e Especificidade. 
-
 <div align="center">
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/b84b0315-f189-4f26-b9c3-e2f724a21f68.png" width="700px" />
 </div>
+
+#### Ponto de corte de 0,7535 que minimiza as diferenças entre Sensibilidade e Especificidade. 
 
 ````
 # Obtendo a probabilidade estimada de ser um bom pagador para cada cliente 					
