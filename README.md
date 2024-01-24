@@ -367,7 +367,7 @@ summary(regressao_log)
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/eaa28942-4d2b-4508-85a0-895f0df3623c.png" width="600px" />
 </div>
 
-#### Seleção das melhores variáveis 
+#### Selecionando as melhores variáveis 
 
 ````
 # Modelagem com Machine Learning - Regressao logisttica - Retirando variável Tempo_Experiencia 
