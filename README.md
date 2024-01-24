@@ -336,7 +336,7 @@ dados_teste[, c("Idade", "Tempo_Experiencia", "Tempo_Endereco", "Renda", "Debito
 
 #### A Regressão logística é particularmente útil quando a variável de saída é categórica e binária. Ela estima a probabilidade de uma instância pertencer a uma classe específica com base em uma combinação linear de variáveis independentes. A função logística (também chamada de função sigmoid) é utilizada para transformar a saída linear em uma probabilidade entre 0 e 1.
 
-#### #### Divisão da base para treino e teste
+#### Divisão da base para treino e teste
 
 #### A divisão de dados em conjuntos de treinamento e teste é uma prática comum em Machine Learning. O objetivo é avaliar a capacidade do modelo de generalizar para novos dados que não foram usados no treinamento. A ideia é treinar o modelo em um conjunto de dados de treinamento e avaliar seu desempenho em um conjunto de dados de teste. O conjunto de treinamento é usado para ajustar os parâmetros do modelo, enquanto o conjunto de teste é usado para avaliar o desempenho do modelo em dados não vistos. A divisão dos dados em conjuntos de treinamento e teste ajuda a evitar o overfitting, que ocorre quando o modelo se ajusta demais aos dados de treinamento e não generaliza bem para novos dados.
 
@@ -356,14 +356,15 @@ dados_teste <- emprestimo[-indices_treino, ]
 #### A variável explicativa Tempo_Experiencia apresenta p-valor acima de 5%. Logo, não é um aspecto estatisticamente significativo para explicar a decisão de conceder empréstimo e pode ser retirado do modelo. 
 
 ````
-# Modelagem estatistica tradicional - Retiradno a variavel Tempo_Experiencia
+# Modelagem com Machine Learning - Regressao logistica
 regressao_log <- glm(Classif ~ Idade + 
-                     Tempo_Endereco + 
-                     Renda + 
-                     Debito_Renda +
-                     Variacao_Debito, 
-                     binomial(link = "logit"), 
-                     data = emprestimo)
+                       Tempo_Experiencia + 
+                       Tempo_Endereco + 
+                       Renda + 
+                       Debito_Renda +
+                       Variacao_Debito, 
+                       binomial(link = "logit"), 
+                       data = dados_treino)
 summary(regressao_log)
 ````
 <div align="center">
