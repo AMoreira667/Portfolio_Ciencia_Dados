@@ -333,6 +333,10 @@ dados_teste[, c("Idade", "Tempo_Experiencia", "Tempo_Endereco", "Renda", "Debito
 
 #### A Regressão logística é particularmente útil quando a variável de saída é categórica e binária. Ela estima a probabilidade de uma instância pertencer a uma classe específica com base em uma combinação linear de variáveis independentes. A função logística (também chamada de função sigmoid) é utilizada para transformar a saída linear em uma probabilidade entre 0 e 1.
 
+#### #### Divisão da base para treino e teste
+
+#### A divisão de dados em conjuntos de treinamento e teste é uma prática comum em Machine Learning. O objetivo é avaliar a capacidade do modelo de generalizar para novos dados que não foram usados no treinamento. A ideia é treinar o modelo em um conjunto de dados de treinamento e avaliar seu desempenho em um conjunto de dados de teste. O conjunto de treinamento é usado para ajustar os parâmetros do modelo, enquanto o conjunto de teste é usado para avaliar o desempenho do modelo em dados não vistos. A divisão dos dados em conjuntos de treinamento e teste ajuda a evitar o overfitting, que ocorre quando o modelo se ajusta demais aos dados de treinamento e não generaliza bem para novos dados.
+
 ````
 # Dividindo os dados em conjuntos de treinamento e teste (80% treinamento, 20% teste)
 set.seed(123)  # Define uma semente para reproducibilidade
@@ -505,7 +509,7 @@ print(auc)
 
 #### Os modelos C5.0 são bastante robustos na presença de problemas como dados omissos e grandes números de campos de entrada. Eles geralmente não requerem longos tempos de treinamento para estimar. Além disso, os modelos C5.0 tendem a ser mais fáceis de entender do que alguns outros tipos de modelo, já que as regras derivadas do modelo possuem uma interpretação muito clara. O C5.0 também oferece o método de reforço poderoso para aumentar a precisão da classificação.
 
-#### Divisaõ da base para treino e teste
+#### Divisão da base para treino e teste
 
 ````
 # Usando sample para construir os dados de treino e de teste
