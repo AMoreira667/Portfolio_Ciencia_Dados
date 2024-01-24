@@ -512,7 +512,7 @@ legend("bottomright", legend = paste("AUC =", round(auc(roc_objeto), 2)), col = 
 </div>
 
 #### Análise:
-#### De acordo com o índice AUC (0,80) podemos afirmar que o modelo apresenta um excelente desempenho.
+#### De acordo com o índice AUC (0,80) podemos afirmar que o modelo apresenta um excelente desempenho, pois possui alto poder de discriminância de 0’s e 1’s com altos níveis de sensibilidade e de especificidade.
 
 ## 4 - Modelagem (Modeling)
 
