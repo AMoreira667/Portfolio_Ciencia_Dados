@@ -97,8 +97,7 @@ setwd("inserir directorio do arquivo"") # Ou Ctrl + Shift + H
 install.packages("readxl")             # Para leitura de dados Excel
 install.packages("Information")				 # Para calculo IV
 install.packages("car")				         # Para analise de regressao e diagnostico de modelos 
-install.packages("cutpointr")				   # Para calculo ponto de corte
-install.packages("ROCR")	             # Para calculo KS e AUC			
+install.packages("cutpointr")				   # Para calculo ponto de corte		
 install.packages("dplyr")              # Para manipulacao e transformacao dados
 install.packages("psych")              # Para analise psicometrica e estatisitca
 install.packages("C50")                # Decision Tree com algoritmo C50
@@ -115,7 +114,6 @@ library(readxl)
 library(Information)				
 library(car)				
 library(cutpointr)				
-library(ROCR)
 library(dplyr)
 library(psych)
 library(C50)
