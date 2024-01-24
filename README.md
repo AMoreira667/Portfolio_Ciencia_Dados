@@ -484,7 +484,6 @@ print(matriz_confusao)
 </div>
 
 #### Análise:
-
 #### A Acurácia de 72% significa que, em geral, a cada 100 clientes, o modelo identifica corretamente se haverá ou não inadimplência para 72 deles. Já a Sensibilidade indica que cerca de 73% dos clientes que pagam suas dívidas em dias são corretamente classificados pelo modelo. A Especificidade indica que 72% dos clientes que não pagam suas dívidas em dia são corretamente classificados pelo modelo. 
 
 #### De acordo com os índices de Acurácia, Sensibilidade e Especificidade, podemos afirmar que o modelo apresenta um ótimo desempenho, além de estar devidamente balanceado.
@@ -498,20 +497,22 @@ print(matriz_confusao)
 #### Quando o modelo possui alto poder de discriminância de 0’s e 1’s, existem pontos de corte que propiciam altos níveis de sensibilidade e de especificidade, concomitantemente. Isso leva a uma curva ROC com concavidade mais acentuada.
 
 ````
-# Obtendo o AUC e curva ROC do modelo final
-pred <- prediction(emprestimo$Probabilidade, emprestimo$Classif)					
-perf <- performance(pred, "tpr", "fpr")					
-auc <- performance(pred, "auc")					
-auc <- auc@y.values[[1]]					
-print(auc)
+# Criando a objeto ROC
+roc_objeto <- roc(dados_teste$Classif, previsoes)
+
+# Plotando a curva ROC
+plot(roc_objeto, main = "Curva ROC", col = "blue", lwd = 3)
+
+# Adicionando uma legenda
+legend("bottomright", legend = paste("AUC =", round(auc(roc_objeto), 2)), col = "blue", lwd = 2)
 ````
 
 <div align="center">
-<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/75c713c1-460e-45d9-b225-08e4503c0d3a.png" width="600px" />
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/b06884f5-183c-4bbc-8f75-8c4f334c9fa8.png" width="600px" />
 </div>
 
 #### Análise:
-#### De acordo com o índice AUC (0,79) podemos afirmar que o modelo apresenta um bom desempenho.
+#### De acordo com o índice AUC (0,80) podemos afirmar que o modelo apresenta um excelente desempenho.
 
 ## 4 - Modelagem (Modeling)
 
