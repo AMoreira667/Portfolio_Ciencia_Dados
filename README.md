@@ -383,6 +383,10 @@ plot(importance)
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/bcfd6127-f1d8-4a24-842e-e4cf346f7dfe.png" width="600px" />
 </div>
 
+#### No processo de construção do modelo deve-se retirar, a cada passo, a variável com menor significância estatística. Como estamos adotando 95% de confiança, deve-se retirar variáveis cujo p-valor seja maior do que 5%. Esse procedimento é conhecido como Stepwise.
+
+#### A variável explicativa Tempo_Experiencia apresenta p-valor acima de 5%. Logo, não é um aspecto estatisticamente significativo para explicar a decisão de conceder empréstimo e deve ser retirado para melhor ajuste do modelo. 
+
 ````
 # Modelagem com Machine Learning - Regressao logisttica - Retirando variável Tempo_Experiencia 
 regressao_log <- glm(Classif ~ Idade + 
@@ -398,10 +402,6 @@ summary(regressao_log)
 <div align="center">
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/972df4fc-78a9-4e26-a960-d9989133c0a6.png" width="600px" />
 </div>
-
-#### No processo de construção do modelo deve-se retirar, a cada passo, a variável com menor significância estatística. Como estamos adotando 95% de confiança, deve-se retirar variáveis cujo p-valor seja maior do que 5%. Esse procedimento é conhecido como Stepwise.
-
-#### A variável explicativa Tempo_Experiencia apresenta p-valor acima de 5%. Logo, não é um aspecto estatisticamente significativo para explicar a decisão de conceder empréstimo e pode ser retirado do modelo. 
 
 #### Analisando os p-valores obtidos pelo modelo, consegue-se estatisticamente sustentar são as variáveis Debito_Renda, Tempo_Endereco, Variacao_Debito e Renda são variáveis significativas, adotando um nível de confiança de 95%. Logo, são aspectos estatisticamente significativos para explicar a decisão de conceder empréstimo, e devem ser mantidos no modelo.
 
