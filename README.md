@@ -474,16 +474,13 @@ previsoes_classes <- as.factor(ifelse(previsoes >= 0.7535, 1, 0))
 ### Análise de desempenho - Matriz de contigência para classificação
 
 ````
-# Matriz de contigencia para comparar valores observados e valores previstos
-tabela <- table(emprestimo$Classif, emprestimo$Predito)				
-(acuracia       <- (tabela[1,1] + tabela[2,2]) / sum(tabela))				
-(especificidade <- tabela[1,1] / (tabela[1,1] + tabela[1,2]))				
-(sensibilidade  <- tabela[2,2] / (tabela[2,1] + tabela[2,2]))				
-tabela
+# Criar a matriz de confusão usando o pacote caret
+matriz_confusao <- confusionMatrix(data = previsoes_classes, reference = dados_teste$Classif, positive = "1")
+print(matriz_confusao)
 ````
 
 <div align="center">
-<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/e9a9c22d-45fb-4cdf-a256-3bdb833e8342.png" width="600px" />
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/08fa996c-5963-44cb-b51f-6e8efd6efffb.png" width="600px" />
 </div>
 
 #### Análise: 
