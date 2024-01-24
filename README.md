@@ -403,6 +403,7 @@ summary(regressao_log)
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/972df4fc-78a9-4e26-a960-d9989133c0a6.png" width="600px" />
 </div>
 
+#### Análise:
 #### Analisando os p-valores obtidos pelo modelo, consegue-se estatisticamente sustentar são as variáveis Debito_Renda, Tempo_Endereco, Variacao_Debito e Renda são variáveis significativas, adotando um nível de confiança de 95%. Logo, são aspectos estatisticamente significativos para explicar a decisão de conceder empréstimo, e devem ser mantidos no modelo.
 
 ### Cálculo das estimativas
