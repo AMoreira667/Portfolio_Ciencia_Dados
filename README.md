@@ -413,12 +413,6 @@ summary(regressao_log)
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/1b3cdaf1-9637-41bc-a483-fa537417e59c.png" width="600px" />
 </div>
 
-#### Por exemplo, uma pessoa com 80 anos de Idade, com 17 anos de Tempo_Endereco, com Renda de 36,1 salários mínimos, com 4,25 de Debito_Renda e com 1,82 de Variacao_Debito, teriamos: 
-
-<div align="center">
-<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/d97a8075-09c7-4e46-81b6-949d48a67efa.png" width="600px" />
-</div>
-
 ### Obtendo as probabilidades estimadas para cada cliente
 
 ````
