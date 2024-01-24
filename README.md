@@ -347,13 +347,8 @@ indices_treino <- createDataPartition(emprestimo$Classif, p = 0.8, list = FALSE)
 dados_treino <- emprestimo[indices_treino, ]
 dados_teste <- emprestimo[-indices_treino, ]
 ````
-<div align="center">
-<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/05c2dade-d92b-4e9f-8cb8-8fcfc1b7f286.png" width="600px" />
-</div>
 
-#### No processo de construção do modelo deve-se retirar, a cada passo, a variável com menor significância estatística. Como estamos adotando 95% de confiança, deve-se retirar variáveis cujo p-valor seja maior do que 5%. Esse procedimento é conhecido como Stepwise.
-
-#### A variável explicativa Tempo_Experiencia apresenta p-valor acima de 5%. Logo, não é um aspecto estatisticamente significativo para explicar a decisão de conceder empréstimo e pode ser retirado do modelo. 
+#### Criando modelo de Regressão logística
 
 ````
 # Modelagem com Machine Learning - Regressao logistica
@@ -367,6 +362,17 @@ regressao_log <- glm(Classif ~ Idade +
                        data = dados_treino)
 summary(regressao_log)
 ````
+
+<div align="center">
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/eaa28942-4d2b-4508-85a0-895f0df3623c.png" width="600px" />
+</div>
+
+#### Seleção das melhores variáveis 
+
+#### No processo de construção do modelo deve-se retirar, a cada passo, a variável com menor significância estatística. Como estamos adotando 95% de confiança, deve-se retirar variáveis cujo p-valor seja maior do que 5%. Esse procedimento é conhecido como Stepwise.
+
+#### A variável explicativa Tempo_Experiencia apresenta p-valor acima de 5%. Logo, não é um aspecto estatisticamente significativo para explicar a decisão de conceder empréstimo e pode ser retirado do modelo. 
+
 <div align="center">
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/addb3371-2df2-48f0-a0d3-c3570c3afd9e.png" width="600px" />
 </div>
