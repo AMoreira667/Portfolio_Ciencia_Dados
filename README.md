@@ -678,6 +678,10 @@ CrossTable(emprestimo_test$Classif,
 
 #### De acordo com os índices de Acurácia, Sensibilidade e Especificidade, podemos afirmar que o modelo apresenta um ótimo desempenho, além de estar devidamente balanceado após a aplicação da matriz de custo.
 
-## 4 - Modelagem (Modeling)
+## 6 - Implantação (Deployment)
 
-### Modelagem com Machine Learning - Cluster com K-Means (RStudio)
+#### O modelo não foi implantado (deployment) por ser computacionamente e financeiramente muito onerosos.
+
+## Conclusão
+
+
