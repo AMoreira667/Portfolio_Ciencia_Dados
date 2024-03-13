@@ -61,7 +61,7 @@
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/b5f92e35-6fff-4c41-8eeb-5eeaa4de2467.png" width="700px" />
 </div>
 
-## Análise Exploratória de Dados (RStudio) 
+### Análise exploratória de dados (AED) 
 
 #### A análise exploratória de dados (AED) é o uso de ferramentas para examinar determinado conjunto de dados antes mesmo da aplicação de qualquer técnica estatística para tirar conclusões sobre eles. É uma maneira de obter um entendimento prévio sobre os dados disponíveis para um estudo e das variáveis que eles envolvem. <br>
 #### Depois que os dados são coletados e armazenados em um banco de dados, a análise descritiva é o primeiro passo dentro do AED. Nessa etapa, os pesquisadores se familiarizam e organizam esses dados de forma sintetizada para saber que tipo de informações podem ser tiradas deles.
@@ -120,6 +120,7 @@ library(GGally)
 library(caret)
 library(e1071)
 library(pROC)
+library(ggplot2)
 ````
 ### Retirar a notação científica
 
