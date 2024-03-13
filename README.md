@@ -133,9 +133,9 @@ options(scipen = 999)
 emprestimo <- read_excel("Regressao logistica.xlsx", sheet = "Emprestimo - Dados")							
 ````
 
-### Analise exploratória dos dados - Univariada
+### Análise exploratória de dados 
 
-### Cabeçalho
+### Cabeçalho (Head)
 
 ````
 head(emprestimo, 15) # Cabecalho contento as 15 primeiras linhas do dataframe
@@ -144,6 +144,8 @@ head(emprestimo, 15) # Cabecalho contento as 15 primeiras linhas do dataframe
 <div align="center">
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/73db7a4d-a3e8-47c4-8b44-b4d6de0d1c69.png" width="700px" />
 </div>
+
+### Calda (Tail)
 
 ````
 tail(emprestimo, 15) # Calda contento as 15 ultimas linhas do dataframe
@@ -169,9 +171,10 @@ describe(emprestimo[,-1]) # Medidas de dispersao
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/a1a6cdc2-37e5-4f55-b81e-3a476583eae7.png" width="700px" />
 </div>
 
+### Respondendo as perguntas feitas pelo time de Negócios utilizando AED
+
 <ul>
   <li> Quais são as características demográficas dos bons pagadores em comparação com os maus pagadores? 
-       Explorar variáveis como idade, renda, tempo de residência, entre outras. 
 </ul>
 
 ````
@@ -188,7 +191,20 @@ boxplot(Variacao_Debito ~ Classif, data = emprestimo, col = "darkturquoise", mai
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/a008da36-7f67-41ee-9db1-3a8e23f372e9.png" width="700px" />
 </div>
 
+### Análise exploratória de dados - Bivariada com information value (IV)
 
+#### O Valor da Informação, ou Information Value (IV), é um indicador que mensura a força da relação entre duas variáveis, sejam elas numéricas ou categóricas. No contexto da regressão logística, o IV é calculado entre as variáveis explicativas versus a variável resposta (binária) na fase de análise bivariada, sendo útil para realizar uma avaliação prévia de quais variáveis explicativas têm maior potencial de discriminação para a posterior construção de um modelo. Quanto maior o valor do IV, maior o grau de explicabilidade da variável explicativa sobre a resposta. Em grande parte das situações práticas, seu valor varia entre 0 a 0,5, ainda que possa assumir quaisquer valores positivos. 
+
+````
+IV <- create_infotables(data = emprestimo[,c(2:8)], y = "Classif") # Information Value - library("information")
+IV$Summary	
+````
+<div align="center">
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/955b1939-2fc1-4336-a5ae-f2c6d838b85e.png" width="600px" />
+</div>
+
+#### Análise: 
+#### Analisando os dados, a variável Debito_Renda parece ter maior grau de explicabilidade sobre a variável resposta.
 
 
 
