@@ -169,7 +169,6 @@ describe(emprestimo[,-1]) # Medidas de dispersao
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/a1a6cdc2-37e5-4f55-b81e-3a476583eae7.png" width="700px" />
 </div>
 
-
 <ul>
   <li> Quais são as características demográficas dos bons pagadores em comparação com os maus pagadores? 
        Explorar variáveis como idade, renda, tempo de residência, entre outras. 
@@ -186,9 +185,8 @@ boxplot(Variacao_Debito ~ Classif, data = emprestimo, col = "darkturquoise", mai
 ````
 
 <div align="center">
-<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/2931ea1b-94de-4b38-89af-8cc26b9a792f.png" width="600px" />
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/a008da36-7f67-41ee-9db1-3a8e23f372e9.png" width="700px" />
 </div>
-
 
 
 
