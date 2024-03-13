@@ -142,7 +142,7 @@ head(emprestimo, 15) # Cabecalho contento as 15 primeiras linhas do dataframe
 ````
 
 <div align="center">
-<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/823031af-c0f6-4464-a681-3fcc89a72307.png" width="700px" />
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/a008da36-7f67-41ee-9db1-3a8e23f372e9.png" width="700px" />
 </div>
 
 ````
@@ -169,13 +169,25 @@ describe(emprestimo[,-1]) # Medidas de dispersao
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/a1a6cdc2-37e5-4f55-b81e-3a476583eae7.png" width="700px" />
 </div>
 
+
 <ul>
   <li> Quais são as características demográficas dos bons pagadores em comparação com os maus pagadores? 
        Explorar variáveis como idade, renda, tempo de residência, entre outras. 
 </ul>
 
+````
+par(mfrow = c(2, 3)) # Inserir 2 graficos na mesma tela	
+boxplot(Idade ~ Classif, data = emprestimo, col = "darkturquoise", main = "Boxplot Idade") # Idade x Classif					
+boxplot(Tempo_Experiencia ~ Classif, data = emprestimo, col = "darkturquoise", main = "Boxplot Tempo_Experiencia") # Tempo_Experiencia x Classif
+boxplot(Tempo_Endereco ~ Classif, data = emprestimo, col = "darkturquoise", main = "Boxplot Tempo_Endereco") # Tempo_Endereco x Classif
+boxplot(Renda ~ Classif, data = emprestimo, col = "darkturquoise", main = "Boxplot Renda") # Renda x Classif
+boxplot(Debito_Renda ~ Classif, data = emprestimo, col = "darkturquoise", main = "Boxplot Debito_Renda") # Debito_Renda x Classif
+boxplot(Variacao_Debito ~ Classif, data = emprestimo, col = "darkturquoise", main = "Boxplot Variacao_Debito") # Variacao_Debito x Classif
+````
 
-
+<div align="center">
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/2931ea1b-94de-4b38-89af-8cc26b9a792f.png" width="600px" />
+</div>
 
 
 
