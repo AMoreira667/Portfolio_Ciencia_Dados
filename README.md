@@ -43,8 +43,6 @@
        Realizar análises estatísticas ou modelos de machine learning para identificar quais variáveis têm maior influência na previsão.
   <li> Como os bons e maus pagadores estão distribuídos ao longo das diferentes categorias de cada variável?
        Explorar relações entre variáveis, como a interação entre idade e renda, por exemplo.
-  <li> Quais grupos/perfis de clientes parecem serem mais propensos serem bons ou maus pagadores?
-       Explorar relações com agrupamentos.
 </ul>
 
 <div align="center">
