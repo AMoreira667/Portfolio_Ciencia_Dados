@@ -51,11 +51,11 @@
 
 ## 2 - Compreensão dos Dados (Data Understanding)
 
-### Base de Dados
+### Base de dados
 
 #### Considerando dados históricos provenientes de um banco, referentes a 5.000 clientes que solicitaram empréstimos financeiros. A base contém informações como idade, tempo de residência no endereço atual, renda etc., além da variável resposta Classif, que indica se cada clientes foi um bom pagador (1) ou um mau pagador (0). Deseja-se avaliar o potencial dessas variáveis para predizer se novos clientes serão bons ou maus pagadores. 
 
-### Dicionário de Dados
+### Dicionário de dados
 
 <div align="center">
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/b5f92e35-6fff-4c41-8eeb-5eeaa4de2467.png" width="700px" />
@@ -81,7 +81,7 @@
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/03489886-6784-4813-b73d-1422257f51b8.png" width="350px" />
 </div>
 
-### Análise Exploratória de Dados (RStudio) - Pacotes e Biblioteca
+## Pacotes e Biblioteca
 
 ### Mapear diretorio onde esta salvo a base de dados
 
@@ -132,8 +132,6 @@ options(scipen = 999)
 ````
 emprestimo <- read_excel("Regressao logistica.xlsx", sheet = "Emprestimo - Dados")							
 ````
-
-### Análise exploratória de dados 
 
 ### Cabeçalho (Head)
 
@@ -188,11 +186,11 @@ boxplot(Variacao_Debito ~ Classif, data = emprestimo, col = "darkturquoise", mai
 ````
 
 <div align="center">
-<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/a008da36-7f67-41ee-9db1-3a8e23f372e9.png" width="700px" />
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/31158540-b491-4f10-af10-d06fa72d2f88.png" width="700px" />
 </div>
 
 #### Análise:
-#### Analisando os dados dos boxplot das variáveis demograficas (explicativa) x variável resposta Classif, pode-se observar que a variável Variacao_Debito apresenta uma relação com variável Classif devido a disparidade entre os “0” e “1”, o que pode ser idicativo de algum poder preditivo. 
+#### Analisando os dados dos boxplot das variáveis demograficas (explicativa) x variável resposta Classif, pode-se observar que a variável Debito_Renda apresenta uma relação com variável Classif devido a disparidade entre os “0” e “1”, o que pode ser idicativo de algum poder preditivo. 
 
 ### Análise exploratória de dados - Bivariada com information value (IV)
 
@@ -203,13 +201,12 @@ IV <- create_infotables(data = emprestimo[,c(2:8)], y = "Classif") # Information
 IV$Summary	
 ````
 <div align="center">
-<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/955b1939-2fc1-4336-a5ae-f2c6d838b85e.png" width="600px" />
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/955b1939-2fc1-4336-a5ae-f2c6d838b85e.png" width="700px" />
 </div>
 
-#### Análise: 
-#### Analisando os dados, a variável Debito_Renda parece ter maior grau de explicabilidade sobre a variável resposta.
-
-
+#### Análise:
+#### Analisando os dados dos boxplot das variáveis demograficas (explicativa) x variável resposta Classif, pode-se observar que a variável Debito_Renda apresenta uma relação com variável Classif devido a disparidade entre os “0” e “1”, o que pode ser idicativo de algum poder preditivo. 
+Fazendo um segunda verificação com a técnica information value, a variável Debito_Renda parece ter maior grau de explicabilidade sobre a variável resposta, sugere-se que essa variável possa tem alguma relevância para distinguir os bons e maus pagadores. 
 
 
 ### Boxplot e histograma - Idade
