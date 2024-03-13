@@ -142,7 +142,7 @@ head(emprestimo, 15) # Cabecalho contento as 15 primeiras linhas do dataframe
 ````
 
 <div align="center">
-<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/a008da36-7f67-41ee-9db1-3a8e23f372e9.png" width="700px" />
+<img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/73db7a4d-a3e8-47c4-8b44-b4d6de0d1c69.png" width="700px" />
 </div>
 
 ````
