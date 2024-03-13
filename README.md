@@ -205,8 +205,15 @@ IV$Summary
 </div>
 
 #### Análise:
-#### Analisando os dados dos boxplot das variáveis demograficas (explicativa) x variável resposta Classif, pode-se observar que a variável Debito_Renda apresenta uma relação com variável Classif devido a disparidade entre os “0” e “1”, o que pode ser idicativo de algum poder preditivo. 
-Fazendo um segunda verificação com a técnica information value, a variável Debito_Renda parece ter maior grau de explicabilidade sobre a variável resposta, sugere-se que essa variável possa tem alguma relevância para distinguir os bons e maus pagadores. 
+#### Fazendo um segunda verificação com a técnica information value, a variável Debito_Renda parece ter maior grau de explicabilidade sobre a variável resposta, sugere-se que essa variável possa tem alguma relevância para distinguir os bons e maus pagadores. 
+
+<ul>
+  <li> Existe alguma correlação entre a idade dos clientes e sua classificação como bons ou maus pagadores? 
+       Investigar se a idade está relacionada à probabilidade de ser um bom pagador. 
+</ul>
+
+
+
 
 
 ### Boxplot e histograma - Idade
