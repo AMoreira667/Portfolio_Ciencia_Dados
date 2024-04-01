@@ -213,10 +213,6 @@ IV$Summary
        Investigar se a idade está relacionada à probabilidade de ser um bom pagador. 
 </ul>
 
-
-
-
-
 ### Boxplot e histograma - Idade
 
 ````
