@@ -153,6 +153,7 @@ describe(emprestimo[,-1]) # Medidas de dispersao
 <div align="center">
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/a1a6cdc2-37e5-4f55-b81e-3a476583eae7.png" width="700px" />
 </div>
+
 ````
 par(mfrow = c(2, 3)) # Inserir 2 graficos na mesma tela	
 boxplot(Idade ~ Classif, data = emprestimo, col = "darkturquoise", main = "Boxplot Idade") # Idade x Classif					
