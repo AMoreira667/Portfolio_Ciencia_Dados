@@ -1,7 +1,6 @@
 ## Avaliação Riso de Credito
 
-#### Uma instituição financeira acompanha periodicamente o indicador de inadimplência dos produtos financeiros e tem verificado o aumento expressivo desta taxa para o produto empréstimo, no último ano. Por mais que não pagamento gere um valor de “empréstimo” que possa gerar receita futura (devido a taxa de juros) para a instituição, parte do dinheiro pode não ser recuperada. Portanto, traçar estratégias de relacionamento, crédito e cobrança são necessários para controlar a taxa de inadimplência. Assim, a área de Empréstimos, solicitou a construção de um modelo preditivo para o produto com o objetivo de identificar o perfil dos clientes PF inadimplentes. Como a quantidade de clientes é grande e o custo de comunicação é limitado, o modelo auxiliará a instituição financeira a trabalhar de forma otimizada com seus clientes. O modelo deve ter boas taxas de acurárica, especificidade e sensibilidade (mínimo 70%).
-
+#### Uma instituição financeira acompanha periodicamente o indicador de inadimplência dos produtos financeiros e tem verificado o aumento expressivo desta taxa para o produto empréstimo, no último ano. Por mais que não pagamento gere um valor de “empréstimo” que possa gerar receita futura (devido a taxa de juros) para a instituição, parte do dinheiro pode não ser recuperada. Portanto, traçar estratégias de relacionamento, crédito e cobrança são necessários para controlar a taxa de inadimplência. Assim, a área de Empréstimos, solicitou a construção de um modelo preditivo para o produto com o objetivo de identificar o perfil dos clientes PF inadimplentes. Como a quantidade de clientes é grande e o custo de comunicação é limitado, o modelo auxiliará a instituição financeira a trabalhar de forma otimizada com seus clientes. O modelo deve ter boas taxas de acurárica e "AUC" de 70%.
 ## Criterio utilizado para constução do projeto: Cross Industry Standard Process for Data Mining (CRISP-DM)
 
 #### CRISP-DM é a abreviação de Cross Industry Standard Process for Data Mining, que pode ser traduzido como Processo Padrão Inter-Indústrias para Mineração de Dados. Desempenha um papel crucial no cenário empresarial moderno, permitindo que as organizações tomem decisões embasadas e obtenham insights valiosos. Nesse contexto, a metodologia CRISP-DM tem se destacado como uma estrutura robusta para abordar projetos de ciência de dados.
@@ -34,16 +33,14 @@
 
 <ul>
   <li> Quais são as características demográficas dos bons pagadores em comparação com os maus pagadores? 
-       Explorar variáveis como idade, renda, tempo de residência, entre outras. 
+       
   <li> Existe alguma correlação entre a idade dos clientes e sua classificação como bons ou maus pagadores? 
-       Investigar se a idade está relacionada à probabilidade de ser um bom pagador.
+       
   <li> A estabilidade no tempo de residência tem alguma influência na capacidade de pagamento? 
-       Analisar se clientes com maior tempo de residência são mais propensos a serem bons pagadores.
+
   <li> Quais são as variáveis mais importantes na previsão da capacidade de pagamento? 
-       Realizar análises estatísticas ou modelos de machine learning para identificar quais variáveis têm maior influência na previsão.
+   
   <li> Como os bons e maus pagadores estão distribuídos ao longo das diferentes categorias de cada variável?
-       Explorar relações entre variáveis, como a interação entre idade e renda, por exemplo.
-</ul>
 
 <div align="center">
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/eddb0d7d-28df-4acf-93fd-c3280934083b.png" width="700px" />
