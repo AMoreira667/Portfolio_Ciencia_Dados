@@ -707,3 +707,14 @@ CrossTable(emprestimo_test$Classif,
 
 #### Analisando os valores das métricas de avaliação de desempenho dos modelos, podemos afimar o que modelo de Regressão Logística apresentou melhores índicies comparado com a Árvore de Decisão, o que sugere que esse modelo deva ser adotado para realizar novas predições.
 
+#### Regressão Logística
+#### Acurácia = 72%
+#### Sensibilidade = 73%
+#### Especificidade = 72%
+
+#### Árvore de Decisão C5.0
+#### Acurácia = 70%
+#### Sensibilidade = 70%
+#### Especificidade = 70%
+
+
