@@ -1,6 +1,6 @@
 ## Avaliação Riso de Credito
 
-#### Uma instituição financeira acompanha periodicamente o indicador de inadimplência dos produtos financeiros e tem verificado o aumento expressivo desta taxa para o produto empréstimo, no último ano. Por mais que não pagamento gere um valor de “empréstimo” que possa gerar receita futura (devido a taxa de juros) para a instituição, parte do dinheiro pode não ser recuperada. Portanto, traçar estratégias de relacionamento, crédito e cobrança são necessários para controlar a taxa de inadimplência. Assim, a área de Empréstimos, solicitou a construção de um modelo preditivo para o produto com o objetivo de identificar o perfil dos clientes PF inadimplentes. Como a quantidade de clientes é grande e o custo de comunicação é limitado, o modelo auxiliará a instituição financeira a trabalhar de forma otimizada com seus clientes. O modelo deve ter boas taxas de acurárica e "AUC" de 70%.
+#### Uma instituição financeira acompanha periodicamente o indicador de inadimplência dos produtos financeiros e tem verificado o aumento expressivo desta taxa para o produto empréstimo, no último ano. Por mais que não pagamento gere um valor de “empréstimo” que possa gerar receita futura (devido a taxa de juros) para a instituição, parte do dinheiro pode não ser recuperada. Portanto, traçar estratégias de relacionamento, crédito e cobrança são necessários para controlar a taxa de inadimplência. Assim, a área de Empréstimos, solicitou a construção de um modelo preditivo para o produto com o objetivo de identificar o perfil dos clientes PF inadimplentes. Como a quantidade de clientes é grande e o custo de comunicação é limitado, o modelo auxiliará a instituição financeira a trabalhar de forma otimizada com seus clientes. O modelo deve ter boas taxas de acurárica, sensibilidade e especificidade (mínimo de 70%).
 ## Criterio utilizado para constução do projeto: Cross Industry Standard Process for Data Mining (CRISP-DM)
 
 #### CRISP-DM é a abreviação de Cross Industry Standard Process for Data Mining, que pode ser traduzido como Processo Padrão Inter-Indústrias para Mineração de Dados. Desempenha um papel crucial no cenário empresarial moderno, permitindo que as organizações tomem decisões embasadas e obtenham insights valiosos. Nesse contexto, a metodologia CRISP-DM tem se destacado como uma estrutura robusta para abordar projetos de ciência de dados.
@@ -28,19 +28,6 @@
 ## 1 - Compreensão do Negócio (Business Understanding)
 
 #### O objetivo do trabalho é predizer e avaliar o risco de empréstimo de clientes PF (Pessoa Física) de uma instituição financeira. A predição será realizada utilizando dados históricos transacionais e modelos estatísticos e algoritmos de Inteligência Artificial, que selecionarão as características mais relevantes que explicam a justificativa de empréstimo ou não empréstimo. Desta forma, a empresa poderá traçar estratégias financeiras, desenvolver réguas de empréstimos e ações preventivas para minimizar de forma proativa sua taxa de inadimplência de empréstimos.
-
-#### Perguntas feitas pelo time de Negócios:
-
-<ul>
-  <li> Quais são as características demográficas dos bons pagadores em comparação com os maus pagadores? 
-       
-  <li> Existe alguma correlação entre a idade dos clientes e sua classificação como bons ou maus pagadores? 
-       
-  <li> A estabilidade no tempo de residência tem alguma influência na capacidade de pagamento? 
-
-  <li> Quais são as variáveis mais importantes na previsão da capacidade de pagamento? 
-   
-  <li> Como os bons e maus pagadores estão distribuídos ao longo das diferentes categorias de cada variável?
 
 <div align="center">
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/eddb0d7d-28df-4acf-93fd-c3280934083b.png" width="700px" />
@@ -166,13 +153,6 @@ describe(emprestimo[,-1]) # Medidas de dispersao
 <div align="center">
 <img src="https://github.com/AMoreira667/Portfolio_Ciencia_Dados/assets/89550284/a1a6cdc2-37e5-4f55-b81e-3a476583eae7.png" width="700px" />
 </div>
-
-### Respondendo as perguntas feitas pelo time de Negócios utilizando AED
-
-<ul>
-  <li> Quais são as características demográficas dos bons pagadores em comparação com os maus pagadores? 
-</ul>
-
 ````
 par(mfrow = c(2, 3)) # Inserir 2 graficos na mesma tela	
 boxplot(Idade ~ Classif, data = emprestimo, col = "darkturquoise", main = "Boxplot Idade") # Idade x Classif					
@@ -725,4 +705,5 @@ CrossTable(emprestimo_test$Classif,
 
 ## Conclusão
 
+#### Analisando os valores das métricas de avaliação de desempenho dos modelos, podemos afimar o que modelo de Regressão Logística apresentou melhores índicies comparado com a Árvore de Decisão, o que sugere que esse modelo deva ser adotado para realizar novas predições.
 
